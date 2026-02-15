@@ -1,0 +1,7 @@
+.tmp_*
+.tmp*/
+*.swiftdoc
+*.swiftmodule
+*.swiftsourceinfo
+*.dSYM
+*.o
