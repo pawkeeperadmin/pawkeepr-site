@@ -191,6 +191,20 @@ p {
   margin-top: var(--s3);
 }
 
+/* Center hero content at all breakpoints (spec: screenshot below text) */
+.hero-wrap > div:first-child {
+  text-align: center;
+}
+
+.hero-wrap .lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-wrap .cta-row {
+  justify-content: center;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -524,8 +538,6 @@ textarea { min-height: 140px; resize: vertical; }
 }
 
 @media (min-width: 1020px) {
-  .hero-wrap { grid-template-columns: 1.05fr 0.95fr; align-items: center; }
-  .device-mock { margin-top: 0; justify-self: end; width: min(420px, 100%); }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
   .carousel-slide { flex-basis: 32%; }
 }
@@ -535,4 +547,3 @@ textarea { min-height: 140px; resize: vertical; }
   .carousel-viewport { scroll-behavior: auto; }
   body::after { display: none; }
 }
-
