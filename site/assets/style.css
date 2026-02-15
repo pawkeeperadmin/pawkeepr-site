@@ -108,8 +108,9 @@ a:hover { text-decoration: underline; }
 
 .navlinks {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
+  align-items: center;
   gap: 6px;
 }
 
@@ -120,6 +121,7 @@ a:hover { text-decoration: underline; }
   color: rgba(42, 60, 56, 0.82);
   font-weight: 650;
   letter-spacing: 0.1px;
+  white-space: nowrap;
 }
 
 .navlinks a:hover {
@@ -152,6 +154,13 @@ a:hover { text-decoration: underline; }
   margin-right: auto;
 }
 
+.masthead .masthead-sub {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72ch;
+}
+
 /* First section spacing tweak (carousel now sits at top) */
 .section-first {
   margin-top: var(--s3);
@@ -167,11 +176,22 @@ a:hover { text-decoration: underline; }
   color: rgba(16, 32, 29, 0.92) !important;
 }
 
-.nav-beta svg {
-  width: 16px;
-  height: 16px;
-  flex: 0 0 auto;
+.nav-beta .beta-badge {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  background: rgba(30, 158, 142, 0.14);
   color: rgba(30, 158, 142, 0.95);
+  border: 1px solid rgba(30, 158, 142, 0.25);
+}
+
+@media (max-width: 720px) {
+  .navlinks { flex-wrap: wrap; }
 }
 
 /* Typography */

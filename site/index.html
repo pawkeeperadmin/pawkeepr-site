@@ -42,13 +42,7 @@
         <a href="/about/">About</a>
         <a href="/terms/">Terms</a>
         <a id="nav-testflight" class="nav-beta" href="#" aria-label="Public beta (TestFlight)">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 2a7 7 0 0 0-7 7v6.5c0 1.9 1.6 3.5 3.5 3.5H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M12 2a7 7 0 0 1 7 7v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M12 22v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10 14h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M16.5 21.5l-1.2-3.1 3.1 1.2 1.2-3.1 1.9 1.9-2.7 1.1 1.1 2.7-1.9-1.9Z" fill="currentColor" opacity="0.9"/>
-          </svg>
+          <span class="beta-badge" aria-hidden="true">TF</span>
           <span>Public beta</span>
         </a>
       </nav>
@@ -59,6 +53,7 @@
     <section class="masthead" aria-label="Pawkeepr">
       <h1><strong>pawkeepr</strong></h1>
       <p class="lede">Your pet’s life, beautifully organized.</p>
+      <p class="muted masthead-sub">Track health, reminders, caregivers, and memories, with optional AI summaries.</p>
     </section>
 
     <!-- Screenshots (moved to top) -->
@@ -231,12 +226,6 @@
         </div>
       </div>
 
-      <div class="support-inline card card-pad" style="margin-top: 16px;">
-        <h3 style="margin: 0;">Support</h3>
-        <p style="margin-top: 8px;">
-          Questions or feedback? Email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>.
-        </p>
-      </div>
     </section>
 
     <section class="section" aria-label="Why Pawkeepr feels different">
@@ -255,20 +244,6 @@
             <h3>AI only when you want it</h3>
             <p>OCR + summaries help you understand patterns faster — but you stay in control. Private by default.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Public beta invite -->
-    <section class="section" aria-label="Public beta">
-      <div class="card card-pad beta-cta">
-        <h2>Join the public beta</h2>
-        <p class="muted" style="margin-top: 8px;">
-          If Pawkeepr would make your day-to-day care feel calmer, I’d love your feedback. The beta helps shape what we build next.
-        </p>
-        <div class="cta-row" role="group" aria-label="Beta calls to action" style="margin-top: 16px;">
-          <a id="cta-ios" class="btn btn-primary" href="#">Join TestFlight</a>
-          <a class="btn btn-outline" href="#support">Contact support</a>
         </div>
       </div>
     </section>
@@ -344,7 +319,28 @@
       </div>
     </section>
 
-    <!-- FAQ Accordion -->
+    <!-- Public beta invite -->
+    <section class="section" aria-label="Public beta">
+      <div class="card card-pad beta-cta">
+        <h2>Join the public beta</h2>
+        <p class="muted" style="margin-top: 8px;">
+          If Pawkeepr would make your day-to-day care feel calmer, I’d love your feedback. The beta helps shape what we build next.
+        </p>
+        <div class="cta-row" role="group" aria-label="Beta calls to action" style="margin-top: 16px;">
+          <a id="cta-ios" class="btn btn-primary" href="#">Join TestFlight</a>
+          <a class="btn btn-outline" href="#support">Contact support</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="section" aria-label="Support and contact">
+      <h2>Support</h2>
+      <p class="muted" style="margin-top: 8px;">
+        Questions or feedback? Email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>.
+      </p>
+    </section>
+
+    <!-- FAQ Accordion (after Support) -->
     <section class="section" aria-label="FAQ">
       <h2>FAQ</h2>
       <p class="muted" style="margin-top: 8px;">Warm, practical answers.</p>
@@ -363,10 +359,6 @@
           <p>Yes. You can invite household members and assign roles. View-only roles can browse without making changes.</p>
         </details>
         <details>
-          <summary>Will I receive notifications offline?</summary>
-          <p>Notifications depend on device settings and connectivity. If you’re offline, the app may delay syncing until you’re back online.</p>
-        </details>
-        <details>
           <summary>Can I export my data?</summary>
           <p>Yes. You can export your data from within the app, and you can request account deletion at any time.</p>
         </details>
@@ -377,36 +369,28 @@
       </div>
     </section>
 
-    <section id="support" class="section" aria-label="Support and contact">
-      <h2>Support &amp; contact</h2>
-      <p class="muted" style="margin-top: 8px;">
-        The fastest way to reach us is email:
-        <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>.
-      </p>
+    <section class="section" aria-label="Send a message">
+      <div class="card card-pad">
+        <h2>Send a message</h2>
+        <p class="muted" style="margin-top: 8px;">
+          This form drafts an email and opens your email app to send it.
+        </p>
 
-      <div class="section">
-        <div class="card card-pad">
-          <h3 style="margin: 0;">Send a message</h3>
-          <p class="muted" style="margin-top: 8px;">
-            This form drafts an email and opens your email app to send it.
-          </p>
-
-          <form id="support-form" class="form" aria-label="Contact form" style="margin-top: 16px;">
-            <div class="field">
-              <label for="name">Name (optional)</label>
-              <input id="name" name="name" autocomplete="name" />
-            </div>
-            <div class="field">
-              <label for="email">Email (optional)</label>
-              <input id="email" name="email" type="email" autocomplete="email" />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Draft email</button>
-          </form>
-        </div>
+        <form id="support-form" class="form" aria-label="Contact form" style="margin-top: 16px;">
+          <div class="field">
+            <label for="name">Name (optional)</label>
+            <input id="name" name="name" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Draft email</button>
+        </form>
       </div>
     </section>
 
