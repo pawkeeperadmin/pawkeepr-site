@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms | Pawkeepr</title>
-  <meta name="description" content="Terms of Use for Pawkeepr." />
+  <title>Terms &amp; Privacy | Pawkeepr</title>
+  <meta name="description" content="Terms of Use and Privacy Policy for Pawkeepr." />
   <link rel="canonical" href="https://pawkeepr.cc/terms/" />
 
-  <meta property="og:title" content="Pawkeepr Terms" />
-  <meta property="og:description" content="Terms of Use for Pawkeepr." />
+  <meta property="og:title" content="Pawkeepr Terms &amp; Privacy" />
+  <meta property="og:description" content="Terms of Use and Privacy Policy for Pawkeepr." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pawkeepr.cc/terms/" />
   <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
@@ -18,6 +18,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/assets/style.css" />
   <script defer data-domain="pawkeepr.cc" src="https://plausible.io/js/script.js"></script>
+  <script defer src="/assets/config.js"></script>
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
@@ -29,69 +30,110 @@
       </a>
       <nav class="navlinks" aria-label="Site">
         <a href="/about/">About</a>
-        <a href="/privacy/">Privacy</a>
         <a href="/terms/" aria-current="page">Terms</a>
-        <a href="/support/">Support</a>
+        <a id="nav-testflight" class="nav-beta" href="#" aria-label="Public beta (TestFlight)">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2a7 7 0 0 0-7 7v6.5c0 1.9 1.6 3.5 3.5 3.5H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 2a7 7 0 0 1 7 7v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 22v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 14h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16.5 21.5l-1.2-3.1 3.1 1.2 1.2-3.1 1.9 1.9-2.7 1.1 1.1 2.7-1.9-1.9Z" fill="currentColor" opacity="0.9"/>
+          </svg>
+          <span>Public beta</span>
+        </a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero" aria-label="Terms">
-      <h1>Terms of Use</h1>
-      <p class="lede muted">A plain-language baseline for using the service.</p>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Last updated</h2>
-          <p style="margin-top: 8px;">February 2026</p>
-        </div>
+    <section class="section section-first" aria-label="Terms and Privacy">
+      <div class="card card-pad">
+        <h1 style="margin: 0;">Terms &amp; Privacy</h1>
+        <p class="lede muted" style="margin-top: 10px;">
+          Plain-language baseline for using Pawkeepr, and how we handle your data.
+        </p>
+        <p class="small" style="margin-top: 12px;">Last updated: February 2026</p>
       </div>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Medical disclaimer</h2>
-          <p style="margin-top: 8px;">Pawkeepr is not veterinary advice and is not a substitute for professional veterinary care. Always consult a licensed veterinarian for diagnosis, treatment, and emergencies.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Accounts</h2>
-          <p style="margin-top: 8px;">You are responsible for safeguarding your account credentials and for activity under your account.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Acceptable use</h2>
-          <p style="margin-top: 8px;">Please do not misuse the service, attempt to access systems without authorization, or upload malicious content.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Account deletion</h2>
-          <p style="margin-top: 8px;">You can request account deletion within the app (Settings → Privacy → Delete Account). If a grace period is available, the app will show it clearly.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Contact</h2>
-          <p style="margin-top: 8px;">Questions: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
-        </div>
-      </div>
-
-      <footer class="footer" aria-label="Footer">
-        <div>
-          <a href="/about/">About</a> ·
-          <a href="/privacy/">Privacy Policy</a> ·
-          <a href="/support/">Support</a>
-        </div>
-        <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
-      </footer>
     </section>
+
+    <section class="section" aria-label="Terms of use" id="terms">
+      <div class="card card-pad">
+        <h2>Terms of Use</h2>
+
+        <h3 style="margin-top: 16px;">Medical disclaimer</h3>
+        <p style="margin-top: 8px;">
+          Pawkeepr is not veterinary advice and is not a substitute for professional veterinary care.
+          Always consult a licensed veterinarian for diagnosis, treatment, and emergencies.
+        </p>
+
+        <h3 style="margin-top: 16px;">Accounts</h3>
+        <p style="margin-top: 8px;">
+          You are responsible for safeguarding your account credentials and for activity under your account.
+        </p>
+
+        <h3 style="margin-top: 16px;">Acceptable use</h3>
+        <p style="margin-top: 8px;">
+          Please do not misuse the service, attempt to access systems without authorisation, or upload malicious content.
+        </p>
+
+        <h3 style="margin-top: 16px;">Account deletion</h3>
+        <p style="margin-top: 8px;">
+          You can request account deletion within the app (Settings → Privacy → Delete Account).
+          If a grace period is available, the app will show it clearly.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Privacy policy" id="privacy">
+      <div class="card card-pad">
+        <h2>Privacy Policy</h2>
+        <p class="muted" style="margin-top: 8px;">Clear, practical, and written for real use.</p>
+
+        <h3 style="margin-top: 16px;">What we collect</h3>
+        <p style="margin-top: 8px;"><strong>Account</strong>: email address, display name, authentication provider identity, preferences, notification settings.</p>
+        <p style="margin-top: 10px;"><strong>Pet and care records</strong>: pet profiles, timeline entries, reminders, caregiver details, notes.</p>
+        <p style="margin-top: 10px;"><strong>Attachments</strong>: photos and documents you choose to upload.</p>
+        <p style="margin-top: 10px;"><strong>Identifiers</strong>: internal user identifiers and device tokens for notifications (if enabled).</p>
+        <p style="margin-top: 10px;"><strong>Diagnostics</strong>: crash and reliability signals to keep the app stable.</p>
+
+        <h3 style="margin-top: 16px;">How we use it</h3>
+        <p style="margin-top: 8px;">
+          To run the app, sync your data, send the notifications you enable, provide support, troubleshoot issues,
+          and protect service integrity.
+        </p>
+
+        <h3 style="margin-top: 16px;">AI features</h3>
+        <p style="margin-top: 8px;">
+          AI features are optional. When enabled, they can process documents you choose to share with the app to help create summaries.
+          You can disable AI at any time in-app.
+        </p>
+
+        <h3 style="margin-top: 16px;">Sharing</h3>
+        <p style="margin-top: 8px;">
+          We do not sell personal data. We only share data with service providers as needed to run the service,
+          when required by law, or when you explicitly initiate an action.
+        </p>
+
+        <h3 style="margin-top: 16px;">Your choices</h3>
+        <p style="margin-top: 8px;">
+          You can export your data and request account deletion from within the app (Settings → Privacy).
+        </p>
+
+        <h3 style="margin-top: 16px;">Contact</h3>
+        <p style="margin-top: 8px;">
+          Support: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer" aria-label="Footer">
+      <div>
+        <a href="/about/">About</a> ·
+        <a href="/security/">Security</a>
+      </div>
+      <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
+    </footer>
   </main>
 </body>
 </html>
+

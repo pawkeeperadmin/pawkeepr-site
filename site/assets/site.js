@@ -25,6 +25,13 @@
     testflight
   );
 
+  // Header beta link (same target as the CTA)
+  setLink(
+    'nav-testflight',
+    'mailto:support@pawkeepr.cc?subject=Join%20TestFlight&body=Hi%20pawkeepr%2C%0A%0AI%27d%20like%20to%20join%20TestFlight.%0A%0ADevice%3A%20%0AiOS%20version%3A%20%0A%0AThanks%21',
+    testflight
+  );
+
   // Optional Android beta link (if the element exists on a given page)
   setLink(
     'cta-android',
@@ -106,4 +113,3 @@
     setDot(0);
   }
 })();
-

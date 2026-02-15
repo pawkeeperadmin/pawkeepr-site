@@ -134,6 +134,46 @@ a:hover { text-decoration: underline; }
   color: var(--htext);
 }
 
+/* Masthead (replaces hero on homepage) */
+.masthead {
+  padding-top: var(--s5);
+  padding-bottom: var(--s1);
+  text-align: center;
+}
+
+.masthead h1 {
+  margin: 0;
+  font-size: clamp(32px, 4.8vw, 46px);
+  line-height: 1.05;
+}
+
+.masthead .lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* First section spacing tweak (carousel now sits at top) */
+.section-first {
+  margin-top: var(--s3);
+}
+
+/* Nav "Public beta" pill */
+.nav-beta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-color: rgba(242, 184, 74, 0.35) !important;
+  background: rgba(242, 184, 74, 0.12);
+  color: rgba(16, 32, 29, 0.92) !important;
+}
+
+.nav-beta svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  color: rgba(30, 158, 142, 0.95);
+}
+
 /* Typography */
 h1, h2, h3 {
   color: var(--htext);
