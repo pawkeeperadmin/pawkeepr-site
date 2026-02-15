@@ -25,6 +25,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build modern image formats (WebP/AVIF)
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Use squoosh to generate webp/avif without requiring native dependencies.
+          npm_config_loglevel=error npm install -g @squoosh/cli
+
+          # Screenshots (placeholders until replaced with real UI exports).
+          if ls site/assets/screenshots/*.png >/dev/null 2>&1; then
+            squoosh-cli --webp '{"quality":80}' --avif '{"cqLevel":30}' site/assets/screenshots/*.png
+          fi
+
+          # Core brand assets.
+          if [ -f site/assets/app_icon.png ]; then
+            squoosh-cli --webp '{"quality":82}' --avif '{"cqLevel":28}' site/assets/app_icon.png
+          fi
+          if [ -f site/assets/og.png ]; then
+            squoosh-cli --webp '{"quality":82}' --avif '{"cqLevel":28}' site/assets/og.png
+          fi
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

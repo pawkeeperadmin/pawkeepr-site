@@ -6,18 +6,31 @@
   <title>Privacy Policy | pawkeepr</title>
   <meta name="description" content="Privacy Policy for pawkeepr." />
   <link rel="canonical" href="https://pawkeepr.cc/privacy/" />
+
+  <meta property="og:title" content="pawkeepr Privacy Policy" />
+  <meta property="og:description" content="What we collect, how we use it, and your controls." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pawkeepr.cc/privacy/" />
+  <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
+
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <a class="brand" href="/"><img class="brand-logo" src="/assets/app_icon.png" alt="" aria-hidden="true" /><span>pawkeepr</span></a>
+      <a class="brand" href="/" aria-label="pawkeepr home">
+        <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
+        <span class="brand-word">pawkeepr</span>
+      </a>
       <nav class="navlinks" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/about/">About</a>
         <a href="/support/">Support</a>
         <a href="/privacy/" aria-current="page">Privacy</a>
         <a href="/terms/">Terms</a>
-        <a href="/security/">Security</a>
-        <a href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
@@ -26,52 +39,57 @@
     <section class="hero">
       <div class="kicker"><span>Policy</span><span aria-hidden="true">•</span><code>/privacy</code></div>
       <h1>Privacy Policy</h1>
-      <p class="lede">Your privacy matters. This policy explains what pawkeepr collects, how it is used, and what controls you have.</p>
+      <p class="lede">Clear, practical, and written for real use.</p>
 
-      <div class="section">
+      <section class="section">
         <h2>Last updated</h2>
         <p>February 2026</p>
-      </div>
+      </section>
 
-      <div class="section">
-        <h2>Information we collect</h2>
-        <p><strong>Account information</strong>: email address, display name, authentication provider identity, preferences, notification settings.</p>
-        <p style="margin-top:10px;"><strong>Pet and care information</strong>: pet profiles, timeline entries, reminders, caregiver details, notes.</p>
-        <p style="margin-top:10px;"><strong>User content</strong>: photos and documents you upload (attachments such as PDFs/invoices).</p>
-        <p style="margin-top:10px;"><strong>Identifiers</strong>: internal user IDs and device tokens used to deliver notifications.</p>
-        <p style="margin-top:10px;"><strong>Diagnostics</strong>: basic crash and performance diagnostics to keep the app reliable.</p>
-      </div>
+      <section class="section">
+        <h2>What we collect</h2>
+        <p><strong>Account</strong>: email address, display name, authentication provider identity, preferences, notification settings.</p>
+        <p style="margin-top:10px;"><strong>Pet and care records</strong>: pet profiles, timeline entries, reminders, caregiver details, notes.</p>
+        <p style="margin-top:10px;"><strong>Attachments</strong>: photos and documents you choose to upload.</p>
+        <p style="margin-top:10px;"><strong>Identifiers</strong>: internal user identifiers and device tokens for notifications (if enabled).</p>
+        <p style="margin-top:10px;"><strong>Diagnostics</strong>: crash and reliability signals to keep the app stable.</p>
+      </section>
 
-      <div class="section">
-        <h2>How we use your information</h2>
-        <p>To run core app features and sync your data, send the notifications you enable, provide support, troubleshoot issues, and protect service integrity.</p>
-      </div>
+      <section class="section">
+        <h2>How we use it</h2>
+        <p>To run the app, sync your data, send the notifications you enable, provide support, troubleshoot issues, and protect service integrity.</p>
+      </section>
 
-      <div class="section">
-        <h2>Sharing and service providers</h2>
-        <p>We do not sell personal data. We use service providers for infrastructure, authentication, notifications, and (where enabled by you) optional AI/processing features.</p>
-      </div>
+      <section class="section">
+        <h2>AI features</h2>
+        <p>AI features are optional. When enabled, they can process documents you choose to share with the app to help create summaries. You can disable AI at any time in-app.</p>
+      </section>
 
-      <div class="section">
+      <section class="section">
+        <h2>Sharing</h2>
+        <p>We do not sell personal data. We only share data with service providers as needed to run the service, or when required by law, or when you explicitly initiate an action.</p>
+      </section>
+
+      <section class="section">
         <h2>Your choices</h2>
-        <p>You can update your settings in-app. You can request account deletion within the app (Settings → Privacy → Delete Account).</p>
-      </div>
+        <p>You can export your data and request account deletion from within the app (Settings → Privacy).</p>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Contact</h2>
         <p>Privacy questions: <a href="mailto:privacy@pawkeepr.cc">privacy@pawkeepr.cc</a></p>
         <p style="margin-top:10px;">Support: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
-      </div>
+      </section>
 
-      <div class="footer">
-        <div>© <span id="year"></span> pawkeepr.</div>
-        <div style="margin-top: 8px;"><a href="/">Home</a> · <a href="/terms/">Terms</a> · <a href="/support/">Support</a></div>
-      </div>
+      <footer class="footer" aria-label="Footer">
+        <div>
+          <a href="/about/">About</a> ·
+          <a href="/terms/">Terms</a> ·
+          <a href="/support/">Support</a>
+        </div>
+        <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
+      </footer>
     </section>
   </main>
-
-  <script>
-    document.getElementById('year').textContent = String(new Date().getFullYear());
-  </script>
 </body>
 </html>

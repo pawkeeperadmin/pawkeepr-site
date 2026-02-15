@@ -4,26 +4,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Not found | pawkeepr</title>
+  <meta name="robots" content="noindex" />
   <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <a class="brand" href="/"><img class="brand-logo" src="/assets/app_icon.png" alt="" aria-hidden="true" /><span>pawkeepr</span></a>
+      <a class="brand" href="/" aria-label="pawkeepr home">
+        <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
+        <span class="brand-word">pawkeepr</span>
+      </a>
     </div>
   </header>
+
   <main class="container">
     <section class="hero">
       <div class="kicker"><span>404</span><span aria-hidden="true">•</span><code>not found</code></div>
       <h1>That page doesn't exist.</h1>
-      <p class="lede">Go back to the homepage: <a href="/">pawkeepr.cc</a>.</p>
-      <div class="footer">
-        <div>© <span id="year"></span> pawkeepr.</div>
-      </div>
+      <p class="lede">Go back to the homepage: <a class="btn btn-primary" href="/">Home</a></p>
+
+      <footer class="footer" aria-label="Footer">
+        <div>© <span id="year"></span> pawkeepr</div>
+      </footer>
     </section>
   </main>
-  <script>
-    document.getElementById('year').textContent = String(new Date().getFullYear());
-  </script>
 </body>
 </html>

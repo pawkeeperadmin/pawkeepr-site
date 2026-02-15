@@ -4,63 +4,98 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Support | pawkeepr</title>
-  <meta name="description" content="Support for pawkeepr." />
+  <meta name="description" content="Support and contact for pawkeepr." />
   <link rel="canonical" href="https://pawkeepr.cc/support/" />
+
+  <meta property="og:title" content="pawkeepr Support" />
+  <meta property="og:description" content="Help, FAQs, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pawkeepr.cc/support/" />
+  <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
+
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <a class="brand" href="/"><img class="brand-logo" src="/assets/app_icon.png" alt="" aria-hidden="true" /><span>pawkeepr</span></a>
+      <a class="brand" href="/" aria-label="pawkeepr home">
+        <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
+        <span class="brand-word">pawkeepr</span>
+      </a>
       <nav class="navlinks" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/about/">About</a>
         <a href="/support/" aria-current="page">Support</a>
         <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
-        <a href="/security/">Security</a>
-        <a href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <div class="kicker"><span>Help</span><span aria-hidden="true">•</span><code>/support</code></div>
-      <h1>Support</h1>
-      <p class="lede">If you need help, email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>. Include your device type (iPhone/Android) and what you were doing when the issue occurred.</p>
+      <div class="kicker"><span>Support</span><span aria-hidden="true">•</span><code>/support</code></div>
+      <h1>Support &amp; contact</h1>
+      <p class="lede">The fastest way to reach us is email: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>.</p>
 
-      <div class="section">
+      <section class="section" aria-label="FAQ">
         <h2>FAQ</h2>
+        <p>Common questions and quick fixes.</p>
+
         <div class="faq">
           <details>
             <summary>I am not receiving notifications</summary>
-            <p>Check Settings → Notifications in the app, and iOS Settings → Notifications → pawkeepr. Also confirm Focus/Do Not Disturb isn't blocking alerts.</p>
+            <p>Confirm notifications are enabled in the app and in iOS/Android system settings. Also check Focus/Do Not Disturb.</p>
           </details>
           <details>
-            <summary>How do I share access with family?</summary>
-            <p>Open Settings → Family Sharing → Manage Family Group and invite a member. Roles control whether members can edit or view.</p>
+            <summary>How do I export my data?</summary>
+            <p>In the app, go to Settings → Privacy → Export My Data.</p>
           </details>
           <details>
             <summary>How do I delete my account?</summary>
             <p>In the app, go to Settings → Privacy → Delete Account.</p>
           </details>
+          <details>
+            <summary>How does AI work?</summary>
+            <p>AI features are optional and can be turned off in Settings. When enabled, they can help summarize documents you choose to share with the app.</p>
+          </details>
         </div>
-      </div>
+      </section>
 
-      <div class="section">
-        <h2>Contact</h2>
-        <p>Support: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
-        <p style="margin-top:10px;">Privacy: <a href="mailto:privacy@pawkeepr.cc">privacy@pawkeepr.cc</a></p>
-      </div>
+      <section id="contact" class="section" aria-label="Contact">
+        <h2>Send a message</h2>
+        <p>Use this form to draft an email. Your device will open your email app to send it.</p>
 
-      <div class="footer">
-        <div>© <span id="year"></span> pawkeepr.</div>
-        <div style="margin-top: 8px;"><a href="/">Home</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></div>
-      </div>
+        <form id="support-form" class="form">
+          <div class="field">
+            <label for="name">Name (optional)</label>
+            <input id="name" name="name" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Draft email</button>
+          <div class="small">For privacy and security issues, use <a href="mailto:privacy@pawkeepr.cc">privacy@pawkeepr.cc</a> or <a href="mailto:security@pawkeepr.cc">security@pawkeepr.cc</a>.</div>
+        </form>
+      </section>
+
+      <footer class="footer" aria-label="Footer">
+        <div>
+          <a href="/about/">About</a> ·
+          <a href="/privacy/">Privacy</a> ·
+          <a href="/terms/">Terms</a>
+        </div>
+        <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
+      </footer>
     </section>
   </main>
-
-  <script>
-    document.getElementById('year').textContent = String(new Date().getFullYear());
-  </script>
 </body>
 </html>

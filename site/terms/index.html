@@ -6,18 +6,31 @@
   <title>Terms of Use | pawkeepr</title>
   <meta name="description" content="Terms of Use for pawkeepr." />
   <link rel="canonical" href="https://pawkeepr.cc/terms/" />
+
+  <meta property="og:title" content="pawkeepr Terms" />
+  <meta property="og:description" content="Terms of Use for pawkeepr." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pawkeepr.cc/terms/" />
+  <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
+
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <a class="brand" href="/"><img class="brand-logo" src="/assets/app_icon.png" alt="" aria-hidden="true" /><span>pawkeepr</span></a>
+      <a class="brand" href="/" aria-label="pawkeepr home">
+        <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
+        <span class="brand-word">pawkeepr</span>
+      </a>
       <nav class="navlinks" aria-label="Site">
+        <a href="/#features">Features</a>
+        <a href="/about/">About</a>
         <a href="/support/">Support</a>
         <a href="/privacy/">Privacy</a>
         <a href="/terms/" aria-current="page">Terms</a>
-        <a href="/security/">Security</a>
-        <a href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
@@ -26,47 +39,47 @@
     <section class="hero">
       <div class="kicker"><span>Policy</span><span aria-hidden="true">•</span><code>/terms</code></div>
       <h1>Terms of Use</h1>
-      <p class="lede">These terms govern your use of pawkeepr.</p>
+      <p class="lede">A plain-language baseline for using the service.</p>
 
-      <div class="section">
+      <section class="section">
         <h2>Last updated</h2>
         <p>February 2026</p>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Medical disclaimer</h2>
         <p>pawkeepr is not veterinary advice and is not a substitute for professional veterinary care. Always consult a licensed veterinarian for diagnosis, treatment, and emergencies.</p>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Accounts</h2>
         <p>You are responsible for safeguarding your account credentials and for activity under your account.</p>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Acceptable use</h2>
-        <p>Do not misuse the service, attempt to access systems without authorization, or upload malicious content.</p>
-      </div>
+        <p>Please do not misuse the service, attempt to access systems without authorization, or upload malicious content.</p>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Account deletion</h2>
-        <p>You can request account deletion in-app (Settings → Privacy → Delete Account).</p>
-      </div>
+        <p>You can request account deletion within the app (Settings → Privacy → Delete Account). If a grace period is available, the app will show it clearly.</p>
+      </section>
 
-      <div class="section">
+      <section class="section">
         <h2>Contact</h2>
         <p>Questions: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
-      </div>
+      </section>
 
-      <div class="footer">
-        <div>© <span id="year"></span> pawkeepr.</div>
-        <div style="margin-top: 8px;"><a href="/">Home</a> · <a href="/privacy/">Privacy</a> · <a href="/support/">Support</a></div>
-      </div>
+      <footer class="footer" aria-label="Footer">
+        <div>
+          <a href="/about/">About</a> ·
+          <a href="/privacy/">Privacy</a> ·
+          <a href="/support/">Support</a>
+        </div>
+        <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
+      </footer>
     </section>
   </main>
-
-  <script>
-    document.getElementById('year').textContent = String(new Date().getFullYear());
-  </script>
 </body>
 </html>
