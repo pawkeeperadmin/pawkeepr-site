@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support | pawkeepr</title>
+  <meta name="description" content="Support for pawkeepr." />
+  <link rel="canonical" href="https://pawkeepr.cc/support/" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/"><span class="brand-badge" aria-hidden="true"></span><span>pawkeepr</span></a>
+      <nav class="navlinks" aria-label="Site">
+        <a href="/support/" aria-current="page">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker"><span>Help</span><span aria-hidden="true">•</span><code>/support</code></div>
+      <h1>Support</h1>
+      <p class="lede">If you need help, email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>. Include your device type (iPhone/Android) and what you were doing when the issue occurred.</p>
+
+      <div class="section">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>I am not receiving notifications</summary>
+            <p>Check Settings → Notifications in the app, and iOS Settings → Notifications → pawkeepr. Also confirm Focus/Do Not Disturb isn't blocking alerts.</p>
+          </details>
+          <details>
+            <summary>How do I share access with family?</summary>
+            <p>Open Settings → Family Sharing → Manage Family Group and invite a member. Roles control whether members can edit or view.</p>
+          </details>
+          <details>
+            <summary>How do I delete my account?</summary>
+            <p>In the app, go to Settings → Privacy → Delete Account.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Contact</h2>
+        <p>Support: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
+        <p style="margin-top:10px;">Privacy: <a href="mailto:privacy@pawkeepr.cc">privacy@pawkeepr.cc</a></p>
+      </div>
+
+      <div class="footer">
+        <div>© <span id="year"></span> pawkeepr.</div>
+        <div style="margin-top: 8px;"><a href="/">Home</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

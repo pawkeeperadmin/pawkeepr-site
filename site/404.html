@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Not found | pawkeepr</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/"><span class="brand-badge" aria-hidden="true"></span><span>pawkeepr</span></a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div class="kicker"><span>404</span><span aria-hidden="true">•</span><code>not found</code></div>
+      <h1>That page doesn't exist.</h1>
+      <p class="lede">Go back to the homepage: <a href="/">pawkeepr.cc</a>.</p>
+      <div class="footer">
+        <div>© <span id="year"></span> pawkeepr.</div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

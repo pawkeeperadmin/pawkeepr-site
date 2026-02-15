@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>pawkeepr</title>
+  <meta name="description" content="pawkeepr is a calm, trusted place to keep your pet's care history, reminders, and the moments that matter." />
+  <link rel="canonical" href="https://pawkeepr.cc/" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="pawkeepr home">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>pawkeepr</span>
+      </a>
+      <nav class="navlinks" aria-label="Site">
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">
+        <span>Independent product</span>
+        <span aria-hidden="true">•</span>
+        <code>pawkeepr.cc</code>
+      </div>
+      <h1>A thoughtful home for your pet's story.</h1>
+      <p class="lede">pawkeepr keeps your pet's care history, reminders, documents, and memories in one calm place. Built for clarity, continuity, and peace of mind.</p>
+
+      <div class="grid" role="list">
+        <div class="card" role="listitem">
+          <strong>Timeline that feels like a story</strong>
+          <p>Log vet visits, medications, symptoms, grooming, milestones, and everyday notes. Keep everything searchable and connected.</p>
+        </div>
+        <div class="card" role="listitem">
+          <strong>Reminders that keep you on track</strong>
+          <p>Schedule upcoming care and get notifications when it's time. Mark items done and stay organised.</p>
+        </div>
+        <div class="card" role="listitem">
+          <strong>Documents and attachments</strong>
+          <p>Attach invoices, PDFs, and photos so important details are never buried in email threads again.</p>
+        </div>
+        <div class="card" role="listitem">
+          <strong>Family sharing</strong>
+          <p>Invite household members so the people who care can log care together, with role-based access.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Support</h2>
+        <p>If you need help, start here: <a href="/support/">pawkeepr.cc/support</a>. For direct support, email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>.</p>
+        <div class="pills" aria-label="Quick links">
+          <a class="pill" href="/privacy/"><span>Privacy</span><code>/privacy</code></a>
+          <a class="pill" href="/terms/"><span>Terms</span><code>/terms</code></a>
+          <a class="pill" href="/security/"><span>Security</span><code>/security</code></a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>FAQ</h2>
+        <p>Quick answers to common questions.</p>
+        <div class="faq">
+          <details>
+            <summary>Is pawkeepr veterinary advice?</summary>
+            <p>No. pawkeepr helps you organise records and reminders, but it is not a substitute for professional veterinary care.</p>
+          </details>
+          <details>
+            <summary>What data do you collect?</summary>
+            <p>We collect the data needed to run the app, such as your account email and the pet records, photos, and documents you choose to upload. See <a href="/privacy/">Privacy Policy</a> for details.</p>
+          </details>
+          <details>
+            <summary>How do I delete my account?</summary>
+            <p>You can request account deletion in the app under Settings → Privacy → Delete Account.</p>
+          </details>
+          <details>
+            <summary>How do I report a security issue?</summary>
+            <p>Please email <a href="mailto:security@pawkeepr.cc">security@pawkeepr.cc</a>. Include steps to reproduce and any supporting details.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>© <span id="year"></span> pawkeepr. Built and operated independently.</div>
+        <div style="margin-top: 8px;">Email: <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

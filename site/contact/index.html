@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | pawkeepr</title>
+  <meta name="description" content="Contact pawkeepr." />
+  <link rel="canonical" href="https://pawkeepr.cc/contact/" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/"><span class="brand-badge" aria-hidden="true"></span><span>pawkeepr</span></a>
+      <nav class="navlinks" aria-label="Site">
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+        <a href="/contact/" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker"><span>Contact</span><span aria-hidden="true">•</span><code>/contact</code></div>
+      <h1>Contact</h1>
+      <p class="lede">Email is the best way to reach pawkeepr.</p>
+
+      <div class="grid" role="list">
+        <div class="card" role="listitem">
+          <strong>Support</strong>
+          <p><a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
+        </div>
+        <div class="card" role="listitem">
+          <strong>Privacy</strong>
+          <p><a href="mailto:privacy@pawkeepr.cc">privacy@pawkeepr.cc</a></p>
+        </div>
+        <div class="card" role="listitem">
+          <strong>Security</strong>
+          <p><a href="mailto:security@pawkeepr.cc">security@pawkeepr.cc</a></p>
+        </div>
+        <div class="card" role="listitem">
+          <strong>Response times</strong>
+          <p>We aim to respond within a few business days. Please include screenshots and device details when reporting issues.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>© <span id="year"></span> pawkeepr.</div>
+        <div style="margin-top: 8px;"><a href="/">Home</a> · <a href="/support/">Support</a> · <a href="/privacy/">Privacy</a></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
