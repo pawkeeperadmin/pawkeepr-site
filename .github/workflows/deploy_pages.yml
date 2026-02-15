@@ -51,6 +51,9 @@ jobs:
             to_avif \"$f\"
           done
 
+          echo \"Generated modern formats:\"
+          find site/assets -maxdepth 3 -type f \\( -name \"*.webp\" -o -name \"*.avif\" \\) -print | sort
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
