@@ -118,7 +118,7 @@ a:hover { text-decoration: underline; }
   padding: 10px 12px;
   border-radius: 999px;
   border: 1px solid transparent;
-  color: rgba(42, 60, 56, 0.82);
+  color: var(--btext);
   font-weight: 650;
   letter-spacing: 0.1px;
   white-space: nowrap;
@@ -215,7 +215,7 @@ h2 {
 p {
   margin: 0;
   line-height: 1.7;
-  color: rgba(42, 60, 56, 0.92);
+  color: var(--btext);
 }
 
 .lede {
@@ -224,8 +224,8 @@ p {
   max-width: 70ch;
 }
 
-.muted { color: rgba(42, 60, 56, 0.74); }
-.small { font-size: 13px; color: rgba(42, 60, 56, 0.70); }
+.muted { color: var(--btext); }
+.small { font-size: 13px; color: var(--btext); }
 
 .section {
   margin-top: var(--s6);
@@ -334,7 +334,7 @@ textarea:focus-visible {
   border-radius: 999px;
   border: 1px solid var(--stroke);
   background: rgba(255, 255, 255, 0.58);
-  color: rgba(42, 60, 56, 0.78);
+  color: var(--btext);
   font-size: 13px;
 }
 
@@ -359,7 +359,7 @@ textarea:focus-visible {
   border-radius: 999px;
   border: 1px solid rgba(16, 32, 29, 0.10);
   background: rgba(255, 255, 255, 0.62);
-  color: rgba(42, 60, 56, 0.84);
+  color: var(--btext);
   font-weight: 750;
   font-size: 13px;
   line-height: 1;
@@ -436,7 +436,7 @@ textarea:focus-visible {
 
 .feature p {
   margin-top: 6px;
-  color: rgba(42, 60, 56, 0.78);
+  color: var(--btext);
   line-height: 1.55;
 }
 
@@ -468,7 +468,7 @@ textarea:focus-visible {
 }
 
 .step h3 { margin: 0; font-size: 16px; }
-.step p { margin-top: 6px; color: rgba(42, 60, 56, 0.78); line-height: 1.55; }
+.step p { margin-top: 6px; color: var(--btext); line-height: 1.55; }
 
 /* Trust strip */
 .trust {
@@ -487,7 +487,7 @@ textarea:focus-visible {
   border-radius: 999px;
   border: 1px solid rgba(16, 32, 29, 0.10);
   background: rgba(255, 255, 255, 0.62);
-  color: rgba(42, 60, 56, 0.82);
+  color: var(--btext);
   font-weight: 650;
   font-size: 13px;
 }
@@ -585,7 +585,7 @@ summary {
   color: var(--htext);
 }
 
-details p { margin-top: 10px; color: rgba(42, 60, 56, 0.84); }
+details p { margin-top: 10px; color: var(--btext); }
 
 /* Forms */
 .form {
@@ -595,7 +595,7 @@ details p { margin-top: 10px; color: rgba(42, 60, 56, 0.84); }
 }
 
 .field { display: grid; gap: 6px; }
-label { font-size: 13px; color: rgba(42, 60, 56, 0.72); font-weight: 650; }
+label { font-size: 13px; color: var(--btext); font-weight: 650; }
 
 input, textarea {
   width: 100%;
@@ -614,11 +614,11 @@ textarea { min-height: 140px; resize: vertical; }
   margin-top: var(--s7);
   padding: var(--s4) 0 var(--s7) 0;
   border-top: 1px solid var(--stroke);
-  color: rgba(42, 60, 56, 0.74);
+  color: var(--btext);
   font-size: 13px;
 }
 
-.footer a { color: rgba(42, 60, 56, 0.86); font-weight: 650; }
+.footer a { color: var(--btext); font-weight: 650; }
 
 /* Breakpoints */
 @media (min-width: 760px) {
