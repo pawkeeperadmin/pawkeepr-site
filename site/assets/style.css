@@ -279,6 +279,33 @@ textarea:focus-visible {
   color: rgba(16, 32, 29, 0.88);
 }
 
+.hero-chips {
+  list-style: none;
+  padding: 0;
+  margin: var(--s3) 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-chips li {
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 32, 29, 0.10);
+  background: rgba(255, 255, 255, 0.62);
+  color: rgba(42, 60, 56, 0.84);
+  font-weight: 750;
+  font-size: 13px;
+  line-height: 1;
+  box-shadow: 0 12px 40px rgba(16, 32, 29, 0.08);
+}
+
+.hero-chips li:nth-child(4) {
+  border-color: rgba(242, 184, 74, 0.45);
+  background: rgba(242, 184, 74, 0.14);
+}
+
 .device-mock {
   margin-top: var(--s3);
   width: min(420px, 100%);
