@@ -55,12 +55,12 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.2px;
 }
 
-.brand-badge {
+.brand-logo {
   width: 34px;
   height: 34px;
   border-radius: 11px;
-  background: linear-gradient(135deg, rgba(124, 242, 199, 0.95), rgba(102, 166, 255, 0.95));
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+  object-fit: cover;
 }
 
 .navlinks {
