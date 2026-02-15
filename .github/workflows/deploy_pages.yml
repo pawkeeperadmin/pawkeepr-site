@@ -33,26 +33,26 @@ jobs:
           sudo apt-get install -y webp libavif-bin
 
           to_webp () {
-            local in=\"$1\"
-            local out=\"${in%.png}.webp\"
-            cwebp -q 80 \"$in\" -o \"$out\" >/dev/null
+            local in="$1"
+            local out="${in%.png}.webp"
+            cwebp -q 80 "$in" -o "$out" >/dev/null
           }
 
           to_avif () {
-            local in=\"$1\"
-            local out=\"${in%.png}.avif\"
+            local in="$1"
+            local out="${in%.png}.avif"
             # Quantizer range 0(best)..63(worst). Keep moderate for speed+quality.
-            avifenc --min 24 --max 30 \"$in\" \"$out\" >/dev/null
+            avifenc --min 24 --max 30 "$in" "$out" >/dev/null
           }
 
           for f in site/assets/screenshots/*.png site/assets/app_icon.png site/assets/og.png; do
-            [ -f \"$f\" ] || continue
-            to_webp \"$f\"
-            to_avif \"$f\"
+            [ -f "$f" ] || continue
+            to_webp "$f"
+            to_avif "$f"
           done
 
-          echo \"Generated modern formats:\"
-          { find site/assets -maxdepth 3 -type f -name \"*.webp\" -print; find site/assets -maxdepth 3 -type f -name \"*.avif\" -print; } | sort
+          echo "Generated modern formats:"
+          { find site/assets -maxdepth 3 -type f -name "*.webp" -print; find site/assets -maxdepth 3 -type f -name "*.avif" -print; } | sort
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
