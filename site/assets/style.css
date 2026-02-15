@@ -171,6 +171,11 @@ p {
   margin-top: var(--s6);
 }
 
+/* Avoid double-padding when a section nests a .container (used by "Why ... feels different") */
+.section > .container {
+  padding: 0;
+}
+
 /* Glass cards (light) */
 .card {
   border-radius: var(--radius-16);
