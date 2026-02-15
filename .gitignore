@@ -5,3 +5,5 @@
 *.swiftsourceinfo
 *.dSYM
 *.o
+site/assets/_orig_icon_copy.png
+tools_make_icon_alpha.swift
