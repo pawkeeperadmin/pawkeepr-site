@@ -679,6 +679,7 @@ textarea { min-height: 140px; resize: vertical; }
 .screen-card {
   display: grid;
   gap: 10px;
+  justify-items: center;
 }
 
 .screen-card picture,
@@ -687,10 +688,16 @@ textarea { min-height: 140px; resize: vertical; }
   width: 100%;
 }
 
+.screen-card picture {
+  width: min(100%, 360px);
+}
+
 .screen-card img {
   border-radius: 14px;
   border: 1px solid rgba(16, 32, 29, 0.10);
   background: #fff;
+  height: auto;
+  object-fit: contain;
 }
 
 .screen-card figcaption {
@@ -827,6 +834,10 @@ textarea { min-height: 140px; resize: vertical; }
 @media (min-width: 900px) {
   .screens-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .screen-card picture {
+    width: min(100%, 320px);
   }
 
   .grid-2 {
