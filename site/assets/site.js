@@ -17,7 +17,7 @@
   }
 
   var testflightFallback =
-    'mailto:support@pawkeepr.cc?subject=Join%20TestFlight&body=Hi%20pawkeepr%2C%0A%0AI%27d%20like%20to%20join%20TestFlight.%0A%0ADevice%3A%20%0AiOS%20version%3A%20%0A%0AThanks%21';
+    'mailto:support@pawkeepr.cc?subject=Get%20Early%20Access&body=Hi%20pawkeepr%2C%0A%0AI%27d%20like%20to%20get%20early%20access%20to%20the%20iOS%20beta.%0A%0ADevice%3A%20%0AiOS%20version%3A%20%0A%0AThanks%21';
 
   // Keep destination consistent across all TestFlight CTAs.
   setLink(document.getElementById('nav-testflight'), testflightFallback, testflight);
