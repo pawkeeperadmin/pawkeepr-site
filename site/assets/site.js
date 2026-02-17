@@ -8,6 +8,19 @@
   var cfg = (window.PAWKEEPR || {});
   var testflight = (cfg.testflightUrl || '').trim();
   var androidBeta = (cfg.androidBetaUrl || '').trim();
+  var seenEvents = Object.create(null);
+
+  function track(eventName, params) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', eventName, params || {});
+  }
+
+  function trackOnce(eventName, key, params) {
+    var dedupeKey = eventName + ':' + key;
+    if (seenEvents[dedupeKey]) return;
+    seenEvents[dedupeKey] = true;
+    track(eventName, params);
+  }
 
   function setLink(el, fallbackMailto, url) {
     if (!el) return;
@@ -25,9 +38,52 @@
     setLink(el, testflightFallback, testflight);
   });
 
+  function inferCtaPlacement(el) {
+    if (!el) return 'unknown';
+    if (el.id === 'nav-testflight') return 'nav';
+    if (el.closest('#join-beta')) return 'join_beta';
+    if (el.closest('.faq-head')) return 'faq';
+    if (el.closest('.hero-cta')) return 'hero';
+    if (el.closest('#features')) return 'features';
+    if (el.closest('[aria-label=\"How it works\"]')) return 'how_it_works';
+    if (el.closest('[aria-label=\"Who it’s for\"]')) return 'who_its_for';
+    if (el.closest('[aria-label=\"Public beta\"]')) return 'public_beta';
+    return 'page';
+  }
+
+  function bindEarlyAccessTracking(el) {
+    if (!el) return;
+    el.addEventListener('click', function () {
+      track('early_access_click', {
+        placement: inferCtaPlacement(el),
+        path: window.location.pathname || '/',
+        href: el.getAttribute('href') || ''
+      });
+    });
+  }
+
+  bindEarlyAccessTracking(document.getElementById('nav-testflight'));
+  $all('[data-testflight-link]').forEach(bindEarlyAccessTracking);
+
   var androidFallback =
     'mailto:support@pawkeepr.cc?subject=Get%20Android%20Beta&body=Hi%20pawkeepr%2C%0A%0AI%27d%20like%20to%20join%20the%20Android%20beta.%0A%0ADevice%3A%20%0AAndroid%20version%3A%20%0A%0AThanks%21';
   setLink(document.getElementById('cta-android'), androidFallback, androidBeta);
+
+  // Track CTA section visibility (scroll-to-CTA proxy).
+  var ctaSection = document.getElementById('join-beta');
+  if (ctaSection && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          trackOnce('cta_view', 'join_beta', {
+            section_id: 'join-beta',
+            path: window.location.pathname || '/'
+          });
+        }
+      });
+    }, { threshold: 0.35 });
+    observer.observe(ctaSection);
+  }
 
   var form = $('#support-form');
   if (form) {
@@ -47,8 +103,48 @@
       window.location.href =
         'mailto:support@pawkeepr.cc?subject=' + encodeURIComponent(subject) +
         '&body=' + encodeURIComponent(body);
+
+      track('support_form_draft', {
+        path: window.location.pathname || '/',
+        has_name: name ? 'yes' : 'no',
+        has_email: email ? 'yes' : 'no'
+      });
     });
   }
+
+  // 404 tracking (for static pages and fallback routes).
+  if (
+    window.location.pathname === '/404.html' ||
+    window.location.pathname === '/404' ||
+    /not found/i.test(document.title)
+  ) {
+    track('page_not_found', {
+      path: window.location.pathname || '/',
+      referrer: document.referrer || ''
+    });
+  }
+
+  // Basic JS error tracking.
+  window.addEventListener('error', function (event) {
+    track('js_error', {
+      message: (event && event.message ? String(event.message) : '').slice(0, 200),
+      source: (event && event.filename ? String(event.filename) : '').slice(0, 200),
+      line: event && event.lineno ? String(event.lineno) : ''
+    });
+  });
+
+  window.addEventListener('unhandledrejection', function (event) {
+    var reason = '';
+    if (event && event.reason) {
+      reason = typeof event.reason === 'string'
+        ? event.reason
+        : (event.reason.message || JSON.stringify(event.reason));
+    }
+    track('js_promise_rejection', {
+      reason: String(reason || '').slice(0, 200),
+      path: window.location.pathname || '/'
+    });
+  });
 
   // Lightbox gallery (no dependencies)
   var lightbox = $('#screens-lightbox');
