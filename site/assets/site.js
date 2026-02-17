@@ -5,7 +5,7 @@
   var y = document.getElementById('year');
   if (y) y.textContent = String(new Date().getFullYear());
 
-  var cfg = (window.PAWKEEPR || {});
+  var cfg = (window.pawkeepr || {});
   var testflight = (cfg.testflightUrl || '').trim();
   var androidBeta = (cfg.androidBetaUrl || '').trim();
   var seenEvents = Object.create(null);
