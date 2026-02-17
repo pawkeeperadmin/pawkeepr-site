@@ -4,11 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy | Pawkeepr</title>
-  <meta name="robots" content="noindex" />
-  <meta http-equiv="refresh" content="0; url=/terms/#privacy" />
-  <link rel="canonical" href="https://pawkeepr.cc/terms/#privacy" />
+  <meta name="description" content="Privacy policy summary for Pawkeepr." />
+  <link rel="canonical" href="https://pawkeepr.cc/privacy/" />
+  <meta property="og:title" content="Privacy | Pawkeepr" />
+  <meta property="og:description" content="Privacy policy summary for Pawkeepr." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pawkeepr.cc/privacy/" />
+  <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
+
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/assets/style.css" />
   <script defer data-domain="pawkeepr.cc" src="https://plausible.io/js/script.js"></script>
+  <script defer src="/assets/config.js"></script>
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
@@ -18,19 +27,54 @@
         <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
         <span>pawkeepr</span>
       </a>
+      <nav class="navlinks" aria-label="Site">
+        <a href="/about/">About</a>
+        <a href="/terms/">Terms</a>
+        <a id="nav-testflight" class="nav-beta" href="#" aria-label="Public beta (TestFlight)">
+          <span class="beta-badge" aria-hidden="true">TF</span>
+          <span>Public beta</span>
+        </a>
+      </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="section section-first">
       <div class="card card-pad">
-        <h1 style="margin: 0;">Redirecting…</h1>
+        <h1 style="margin: 0;">Privacy</h1>
         <p class="lede muted" style="margin-top: 10px;">
-          Privacy is now included in <a href="/terms/#privacy">Terms &amp; Privacy</a>.
+          Pawkeepr is private by default. We collect only what is needed to operate the app and support your account.
+        </p>
+
+        <h2 style="margin-top: 16px;">What we collect</h2>
+        <p style="margin-top: 8px;">
+          Account details, pet records, reminders, attachments you upload, and reliability diagnostics.
+        </p>
+
+        <h2 style="margin-top: 16px;">How we use data</h2>
+        <p style="margin-top: 8px;">
+          To provide app functionality, sync records, send notifications you enable, and keep the service stable and secure.
+        </p>
+
+        <h2 style="margin-top: 16px;">Your controls</h2>
+        <p style="margin-top: 8px;">
+          You can export your data and request account deletion from inside the app.
+        </p>
+
+        <p style="margin-top: 12px;">
+          Read full policy in <a href="/terms/#privacy">Terms &amp; Privacy</a>.
         </p>
       </div>
     </section>
+
+    <footer class="footer" aria-label="Footer">
+      <div>
+        <a href="/about/">About</a> ·
+        <a href="/terms/">Terms</a> ·
+        <a href="/support/">Support</a>
+      </div>
+      <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
+    </footer>
   </main>
 </body>
 </html>
-
