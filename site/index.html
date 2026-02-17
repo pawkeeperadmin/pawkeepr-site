@@ -4,19 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Pawkeepr – Pet life manager with AI insights</title>
-  <meta name="description" content="Organise your pet’s health, reminders, docs, and memories with smart timelines and optional AI summaries." />
+  <title>Pawkeepr | Pet care timeline, reminders, and optional AI summaries</title>
+  <meta name="description" content="Vet visits, meds, diet, symptoms, reminders, caregivers — all in one timeline. Optional AI summaries you review before saving." />
   <link rel="canonical" href="https://pawkeepr.cc/" />
 
-  <meta property="og:title" content="Pawkeepr – Pet life manager with AI insights" />
-  <meta property="og:description" content="Organise your pet’s health, reminders, docs, and memories with smart timelines and optional AI summaries." />
+  <meta property="og:title" content="Pawkeepr | Pet care timeline, reminders, and optional AI summaries" />
+  <meta property="og:description" content="Vet visits, meds, diet, symptoms, reminders, caregivers — all in one timeline. Optional AI summaries you review before saving." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pawkeepr.cc/" />
   <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pawkeepr – Pet life manager with AI insights" />
-  <meta name="twitter:description" content="Organise your pet’s health, reminders, docs, and memories with smart timelines and optional AI summaries." />
+  <meta name="twitter:title" content="Pawkeepr | Pet care timeline, reminders, and optional AI summaries" />
+  <meta name="twitter:description" content="Vet visits, meds, diet, symptoms, reminders, caregivers — all in one timeline. Optional AI summaries you review before saving." />
   <meta name="twitter:image" content="https://pawkeepr.cc/assets/og.png" />
 
   <meta name="theme-color" content="#F7FBFA" />
@@ -39,9 +39,10 @@
         <span>pawkeepr</span>
       </a>
       <nav class="navlinks" aria-label="Site">
+        <a href="/" aria-current="page">Home</a>
         <a href="/about/">About</a>
         <a href="/terms/">Terms</a>
-        <a id="nav-testflight" class="nav-beta" href="#" aria-label="Public beta (TestFlight)">
+        <a id="nav-testflight" class="nav-beta" href="#" aria-label="TF Public beta">
           <span class="beta-badge" aria-hidden="true">TF</span>
           <span>Public beta</span>
         </a>
@@ -50,353 +51,176 @@
   </header>
 
   <main class="container">
-    <section class="masthead" aria-label="Pawkeepr">
-      <h1><strong>pawkeepr</strong></h1>
-      <p class="lede">Your pet’s life, beautifully organized.</p>
-      <p class="muted masthead-sub">Track health, reminders, caregivers, and memories, with optional AI summaries.</p>
-    </section>
-
-    <!-- Screenshots (moved to top) -->
-    <section class="section section-first" aria-label="Screenshots">
-      <div class="carousel" data-carousel>
-        <div class="carousel-viewport" tabindex="0" aria-label="Screenshot carousel" role="region">
-          <figure class="carousel-slide" aria-label="Overview">
-            <div class="device-frame card">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="/assets/screenshots/overview-840.jpg"
-                srcset="/assets/screenshots/overview-420.jpg 420w, /assets/screenshots/overview-840.jpg 840w, /assets/screenshots/overview-1260.jpg 1260w"
-                sizes="(max-width: 900px) 82vw, 420px"
-                alt="Dashboard overview screen"
-              />
-            </div>
-          </figure>
-
-          <figure class="carousel-slide" aria-label="Timeline">
-            <div class="device-frame card">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="/assets/screenshots/timeline-840.jpg"
-                srcset="/assets/screenshots/timeline-420.jpg 420w, /assets/screenshots/timeline-840.jpg 840w, /assets/screenshots/timeline-1260.jpg 1260w"
-                sizes="(max-width: 900px) 82vw, 420px"
-                alt="Timeline screen"
-              />
-            </div>
-          </figure>
-
-          <figure class="carousel-slide" aria-label="Reminders">
-            <div class="device-frame card">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="/assets/screenshots/reminders-840.jpg"
-                srcset="/assets/screenshots/reminders-420.jpg 420w, /assets/screenshots/reminders-840.jpg 840w, /assets/screenshots/reminders-1260.jpg 1260w"
-                sizes="(max-width: 900px) 82vw, 420px"
-                alt="Reminders screen"
-              />
-            </div>
-          </figure>
-
-          <figure class="carousel-slide" aria-label="Pets">
-            <div class="device-frame card">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="/assets/screenshots/pets-840.jpg"
-                srcset="/assets/screenshots/pets-420.jpg 420w, /assets/screenshots/pets-840.jpg 840w, /assets/screenshots/pets-1260.jpg 1260w"
-                sizes="(max-width: 900px) 82vw, 420px"
-                alt="Pets screen"
-              />
-            </div>
-          </figure>
-
-          <figure class="carousel-slide" aria-label="AI summary">
-            <div class="device-frame card">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="/assets/screenshots/ai_summary-840.jpg"
-                srcset="/assets/screenshots/ai_summary-420.jpg 420w, /assets/screenshots/ai_summary-840.jpg 840w, /assets/screenshots/ai_summary-1260.jpg 1260w"
-                sizes="(max-width: 900px) 82vw, 420px"
-                alt="AI summary screen"
-              />
-            </div>
-          </figure>
-        </div>
-
-        <div class="carousel-controls" aria-label="Carousel controls">
-          <button class="carousel-btn" type="button" data-carousel-prev aria-label="Previous screenshot">Prev</button>
-          <div class="dots" aria-label="Carousel position" data-carousel-dots>
-            <span class="dot" aria-current="true"></span>
-            <span class="dot" aria-current="false"></span>
-            <span class="dot" aria-current="false"></span>
-            <span class="dot" aria-current="false"></span>
-            <span class="dot" aria-current="false"></span>
-          </div>
-          <button class="carousel-btn" type="button" data-carousel-next aria-label="Next screenshot">Next</button>
-        </div>
+    <section class="masthead" aria-label="Hero">
+      <h1>Your pet’s life, beautifully organized.</h1>
+      <p class="lede">Vet visits, meds, diet, symptoms, reminders, caregivers — all in one timeline. Optional AI summaries you review before saving.</p>
+      <div class="cta-row hero-cta">
+        <a id="cta-ios" data-testflight-link class="btn btn-primary" href="#">Join the TestFlight Beta</a>
+        <a class="btn btn-outline" href="#screens">See how it works</a>
       </div>
     </section>
 
-    <!-- 2. Feature Grid -->
-    <section id="features" class="section" aria-label="Feature Grid">
+    <section id="screens" class="section" aria-label="Screenshots">
+      <h2>Screens at a glance</h2>
+      <div class="screens-grid">
+        <figure class="card card-pad screen-card">
+          <picture>
+            <source srcset="/assets/screenshots/timeline-420.webp" type="image/webp" />
+            <img src="/assets/screenshots/timeline-420.jpg" width="420" height="858" alt="Timeline screen" />
+          </picture>
+          <figcaption>Timeline — your single source of truth.</figcaption>
+        </figure>
+        <figure class="card card-pad screen-card">
+          <picture>
+            <source srcset="/assets/screenshots/reminders-420.webp" type="image/webp" />
+            <img src="/assets/screenshots/reminders-420.jpg" width="420" height="856" alt="Reminders screen" />
+          </picture>
+          <figcaption>Reminders — stay ahead of meds and checkups.</figcaption>
+        </figure>
+        <figure class="card card-pad screen-card">
+          <picture>
+            <source srcset="/assets/screenshots/ai_summary-420.webp" type="image/webp" />
+            <img src="/assets/screenshots/ai_summary-420.jpg" width="420" height="851" alt="AI summary screen" />
+          </picture>
+          <figcaption>AI summaries — you review before anything is saved.</figcaption>
+        </figure>
+      </div>
+      <button type="button" class="text-link" data-open-lightbox>See all screens</button>
+    </section>
+
+    <section class="section" aria-label="Who it’s for">
+      <h2>Made for real-life pet care</h2>
+      <p class="muted" style="margin-top: 8px;">If any of these sound like you, Pawkeepr will feel instantly useful.</p>
+      <div class="grid-2">
+        <article class="card card-pad">
+          <h3>Multi-pet households</h3>
+          <p>Separate histories per pet, without juggling notes and photos across apps.</p>
+        </article>
+        <article class="card card-pad">
+          <h3>Ongoing conditions</h3>
+          <p>Allergies, meds, diet changes, symptoms — track patterns over time.</p>
+        </article>
+        <article class="card card-pad">
+          <h3>Shared caregiving</h3>
+          <p>Let family members help log care with clear roles and permissions.</p>
+        </article>
+        <article class="card card-pad">
+          <h3>Vet-heavy periods</h3>
+          <p>Store documents and receipts, then pull out key details when you need them.</p>
+        </article>
+      </div>
+      <div class="cta-row">
+        <a data-testflight-link class="btn btn-primary" href="#">Join the TestFlight Beta</a>
+      </div>
+    </section>
+
+    <section id="features" class="section" aria-label="Features">
       <h2>Features</h2>
       <p class="muted" style="margin-top: 8px;">A calm system for everyday care, and the moments you’ll want to remember.</p>
 
       <div class="grid-3" role="list" aria-label="Feature list">
         <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M8 6h8M7 10h10M7 14h10M7 18h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <h3>Timeline as the system of record</h3>
-            <p>Everything important in one consistent history.</p>
-          </div>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 6h8M7 10h10M7 14h10M7 18h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><h3>Timeline as the system of record</h3><p>Everything important in one consistent history.</p></div>
         </div>
-
         <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"/>
-            </svg>
-          </div>
-          <div>
-            <h3>Smart reminders &amp; notifications</h3>
-            <p>Stay ahead of care without mental overhead.</p>
-          </div>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div><h3>Smart reminders &amp; notifications</h3><p>Stay ahead of care without mental overhead.</p></div>
         </div>
-
         <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon amber" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M8.5 12.5c.8 1.6 2.5 2.5 3.5 2.5s2.7-.9 3.5-2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M7 10.5c.4-3 2.6-5.5 5-5.5s4.6 2.5 5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M4 14c0 3.3 3.6 6 8 6s8-2.7 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <h3>Multi-pet support</h3>
-            <p>Keep each pet’s story separate, without switching tools.</p>
-          </div>
+          <div class="feature-icon amber" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8.5 12.5c.8 1.6 2.5 2.5 3.5 2.5s2.7-.9 3.5-2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 10.5c.4-3 2.6-5.5 5-5.5s4.6 2.5 5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 14c0 3.3 3.6 6 8 6s8-2.7 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><h3>Multi-pet support</h3><p>Keep each pet’s story separate, without switching tools.</p></div>
         </div>
-
         <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M16 11a4 4 0 1 0-8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M4 21c1.8-3.5 5-6 8-6s6.2 2.5 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <h3>Caregiver coordination</h3>
-            <p>Vets and clinics, organised and connected to events.</p>
-          </div>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 1 0-8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 21c1.8-3.5 5-6 8-6s6.2 2.5 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><h3>Caregiver coordination</h3><p>Caregivers, vets and clinics — organised and linked to events.</p></div>
         </div>
-
         <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon amber" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M7 3h10v18H7V3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <h3>AI summarisation &amp; OCR</h3>
-            <p>Optional: extract details from docs, then review before saving.</p>
-          </div>
+          <div class="feature-icon amber" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10v18H7V3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><h3>Scan documents + optional summaries</h3><p>Optional: extract key details from vet docs, then review before saving.</p></div>
         </div>
-
         <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M8 12a4 4 0 1 1 8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M2.8 21c2-4 5.3-6.2 9.2-6.2S19.2 17 21.2 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M17 8l2-2M7 8L5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <h3>Family sharing &amp; roles</h3>
-            <p>Invite household members, with permission levels.</p>
-          </div>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 12a4 4 0 1 1 8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M2.8 21c2-4 5.3-6.2 9.2-6.2S19.2 17 21.2 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 8l2-2M7 8L5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><h3>Family sharing &amp; roles</h3><p>Invite household members, with permission levels.</p></div>
         </div>
       </div>
-
-    </section>
-
-    <section class="section" aria-label="Why Pawkeepr feels different">
-      <div class="container">
-        <h2>Why Pawkeepr feels different</h2>
-        <div class="grid-3">
-          <div class="card card-pad">
-            <h3>Timeline-first</h3>
-            <p>Everything becomes a trusted story — visits, meds, diet changes, symptoms, milestones — all in one place.</p>
-          </div>
-          <div class="card card-pad">
-            <h3>Made for real care</h3>
-            <p>Built for the messy reality of managing allergies, immunity, caregivers, and constant changes — without stress.</p>
-          </div>
-          <div class="card card-pad">
-            <h3>AI only when you want it</h3>
-            <p>OCR + summaries help you understand patterns faster — but you stay in control. Private by default.</p>
-          </div>
-        </div>
+      <div class="cta-row">
+        <a data-testflight-link class="btn btn-primary" href="#">Join the TestFlight Beta</a>
       </div>
     </section>
 
-    <!-- 3. How It Works -->
-    <section class="section" aria-label="How It Works">
+    <section class="section" aria-label="How it works">
       <h2>How it works</h2>
       <p class="muted" style="margin-top: 8px;">A simple flow that fits into real life.</p>
-
       <div class="steps" role="list" aria-label="Steps">
-        <div class="card card-pad step" role="listitem">
-          <div class="step-num" aria-hidden="true">1</div>
-          <div>
-            <h3>Add pets &amp; caregivers</h3>
-            <p>Set up your pets and the people who care for them.</p>
-          </div>
-        </div>
-
-        <div class="card card-pad step" role="listitem">
-          <div class="step-num" aria-hidden="true">2</div>
-          <div>
-            <h3>Capture life events &amp; reminders</h3>
-            <p>Log visits, treatments, notes, and schedule what’s next.</p>
-          </div>
-        </div>
-
-        <div class="card card-pad step" role="listitem">
-          <div class="step-num" aria-hidden="true">3</div>
-          <div>
-            <h3>Stay on track with insights</h3>
-            <p>Review trends and summaries when you want them.</p>
-          </div>
-        </div>
+        <div class="card card-pad step" role="listitem"><div class="step-num" aria-hidden="true">1</div><div><h3>Add pets &amp; caregivers</h3><p>Set up your pets and the people who care for them.</p></div></div>
+        <div class="card card-pad step" role="listitem"><div class="step-num" aria-hidden="true">2</div><div><h3>Capture life events &amp; reminders</h3><p>Log visits, treatments, notes, and schedule what’s next.</p></div></div>
+        <div class="card card-pad step" role="listitem"><div class="step-num" aria-hidden="true">3</div><div><h3>Stay on track with insights</h3><p>Review trends and summaries when you want them.</p></div></div>
+      </div>
+      <div class="cta-row">
+        <a data-testflight-link class="btn btn-primary" href="#">Join the TestFlight Beta</a>
       </div>
     </section>
 
-    <!-- 4. Trust Strip -->
-    <section class="section" aria-label="Trust">
+    <section class="section" aria-label="Built for trust">
       <h2>Built for trust</h2>
-      <p class="muted" style="margin-top: 8px;">Clear controls, predictable behaviour.</p>
-
-      <div class="trust" aria-label="Trust strip">
-        <span class="trust-pill">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M7 10V8a5 5 0 0 1 10 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M6 10h12v10H6V10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          Private by default
-        </span>
-        <span class="trust-pill">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          Export your data
-        </span>
-        <span class="trust-pill">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M9 3h6m-8 4h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M8 7l1 14h6l1-14" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M10 11v6M14 11v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          Delete account anytime
-        </span>
-        <span class="trust-pill">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 3l8 4v6c0 5-3.5 8-8 8s-8-3-8-8V7l8-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          AI optional
-        </span>
-      </div>
+      <ul class="trust-list">
+        <li><strong>Private by default</strong> — nothing is shared unless you initiate it</li>
+        <li><strong>AI is optional</strong> — enable it only if you want summaries/OCR</li>
+        <li><strong>You review before saving</strong> — AI suggestions never auto-write your records</li>
+        <li><strong>Export anytime</strong> — keep a copy of your data when you need it</li>
+        <li><strong>Delete anytime</strong> — request deletion and we remove your account</li>
+      </ul>
+      <p class="muted trust-links"><a href="/terms/">Terms &amp; Privacy</a> · <a href="/security/">Security</a></p>
     </section>
 
-    <!-- Public beta invite -->
-    <section class="section" aria-label="Public beta">
+    <section id="join-beta" class="section" aria-label="Public beta">
       <div class="card card-pad beta-cta">
         <h2>Join the public beta</h2>
-        <p class="muted" style="margin-top: 8px;">
-          If Pawkeepr would make your day-to-day care feel calmer, I’d love your feedback. The beta helps shape what we build next.
-        </p>
-        <div class="cta-row" role="group" aria-label="Beta calls to action" style="margin-top: 16px;">
-          <a id="cta-ios" class="btn btn-primary" href="#">Join TestFlight</a>
-          <a class="btn btn-outline" href="#support">Contact support</a>
+        <p class="muted" style="margin-top: 8px;">If Pawkeepr would make your day-to-day care feel calmer, I’d love your feedback. The beta helps shape what we build next.</p>
+        <div class="beta-details" aria-label="Beta details">
+          <p><strong>Platform:</strong> iOS via TestFlight</p>
+          <p><strong>Cost:</strong> Free during beta</p>
+          <p><strong>Feedback:</strong> <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
+        </div>
+        <div class="cta-row" role="group" aria-label="Beta call to action" style="margin-top: 16px;">
+          <a data-testflight-link class="btn btn-primary" href="#">Join the TestFlight Beta</a>
         </div>
       </div>
     </section>
 
-    <section id="support" class="section" aria-label="Support and contact">
-      <h2>Support</h2>
-      <p class="muted" style="margin-top: 8px;">
-        Questions or feedback? Email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>.
-      </p>
-    </section>
-
-    <!-- FAQ Accordion (after Support) -->
     <section class="section" aria-label="FAQ">
-      <h2>FAQ</h2>
-      <p class="muted" style="margin-top: 8px;">Warm, practical answers.</p>
-
+      <div class="faq-head">
+        <h2>FAQ</h2>
+        <a data-testflight-link class="btn btn-primary faq-cta" href="#">Join the TestFlight Beta</a>
+      </div>
       <div class="faq">
-        <details>
-          <summary>How private is my data?</summary>
-          <p>Private by default. Your data is stored securely and is only shared when you explicitly initiate an action. See <a href="/terms/#privacy">Terms &amp; Privacy</a>.</p>
-        </details>
-        <details>
-          <summary>How does AI summarisation work?</summary>
-          <p>AI features are optional. When enabled, they can help extract and summarise documents you choose to share. You review suggestions before saving.</p>
-        </details>
-        <details>
-          <summary>Can my family help log care?</summary>
-          <p>Yes. You can invite household members and assign roles. View-only roles can browse without making changes.</p>
-        </details>
-        <details>
-          <summary>Can I export my data?</summary>
-          <p>Yes. You can export your data from within the app, and you can request account deletion at any time.</p>
-        </details>
-        <details>
-          <summary>What happens if there’s no connectivity?</summary>
-          <p>We’ll surface a clear “no connectivity” state and offer a retry. An offline-first mode is planned.</p>
-        </details>
+        <details><summary>Is Pawkeepr free during beta?</summary><p>Yes. The iOS TestFlight beta is currently free.</p></details>
+        <details><summary>Do I need an account?</summary><p>Yes. You need an account so your pets, reminders, and documents stay securely tied to you.</p></details>
+        <details><summary>Can I track multiple pets?</summary><p>Yes. Pawkeepr supports multiple pets with separate histories and reminders.</p></details>
+        <details><summary>Can I turn AI off completely?</summary><p>Yes. AI features are optional and can be disabled from settings.</p></details>
+        <details><summary>How private is my data?</summary><p>Private by default. Your data is stored securely and is only shared when you explicitly initiate an action.</p></details>
+        <details><summary>How does AI summarisation work?</summary><p>When enabled, AI can help extract and summarise documents you choose to process. You review suggestions before saving.</p></details>
+        <details><summary>Can my family help log care?</summary><p>Yes. You can invite household members and assign roles. View-only roles can browse without making changes.</p></details>
       </div>
     </section>
 
     <section class="section" aria-label="Send a message">
       <div class="card card-pad">
         <h2>Send a message</h2>
-        <p class="muted" style="margin-top: 8px;">
-          This form drafts an email and opens your email app to send it.
-        </p>
-
+        <p class="muted" style="margin-top: 8px;">This form drafts an email and opens your email app to send it.</p>
         <form id="support-form" class="form" aria-label="Contact form" style="margin-top: 16px;">
-          <div class="field">
-            <label for="name">Name (optional)</label>
-            <input id="name" name="name" autocomplete="name" />
-          </div>
-          <div class="field">
-            <label for="email">Email (optional)</label>
-            <input id="email" name="email" type="email" autocomplete="email" />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
+          <div class="field"><label for="name">Name (optional)</label><input id="name" name="name" autocomplete="name" /></div>
+          <div class="field"><label for="email">Email (optional)</label><input id="email" name="email" type="email" autocomplete="email" /></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
           <button class="btn btn-primary" type="submit">Draft email</button>
         </form>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" aria-label="Footer">
-      <div>
+      <div class="footer-support">Questions or feedback? Email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></div>
+      <div class="footer-links">
         <a href="/about/">About</a> ·
         <a href="/terms/">Terms</a> ·
         <a href="/security/">Security</a>
@@ -404,5 +228,18 @@
       <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
     </footer>
   </main>
+
+  <div class="lightbox" id="screens-lightbox" aria-hidden="true" role="dialog" aria-label="All app screens">
+    <div class="lightbox-inner" role="document">
+      <button type="button" class="lightbox-close" aria-label="Close" data-close-lightbox>Close</button>
+      <div class="lightbox-grid">
+        <figure><picture><source srcset="/assets/screenshots/overview-840.webp" type="image/webp" /><img src="/assets/screenshots/overview-840.jpg" width="840" height="1686" alt="Dashboard overview screen" loading="lazy" /></picture><figcaption>Overview</figcaption></figure>
+        <figure><picture><source srcset="/assets/screenshots/timeline-840.webp" type="image/webp" /><img src="/assets/screenshots/timeline-840.jpg" width="840" height="1716" alt="Timeline screen" loading="lazy" /></picture><figcaption>Timeline</figcaption></figure>
+        <figure><picture><source srcset="/assets/screenshots/reminders-840.webp" type="image/webp" /><img src="/assets/screenshots/reminders-840.jpg" width="840" height="1712" alt="Reminders screen" loading="lazy" /></picture><figcaption>Reminders</figcaption></figure>
+        <figure><picture><source srcset="/assets/screenshots/pets-840.webp" type="image/webp" /><img src="/assets/screenshots/pets-840.jpg" width="840" height="1703" alt="Pets screen" loading="lazy" /></picture><figcaption>Pets</figcaption></figure>
+        <figure><picture><source srcset="/assets/screenshots/ai_summary-840.webp" type="image/webp" /><img src="/assets/screenshots/ai_summary-840.jpg" width="840" height="1703" alt="AI summary screen" loading="lazy" /></picture><figcaption>AI summary</figcaption></figure>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
