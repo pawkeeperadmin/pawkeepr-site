@@ -3,8 +3,8 @@
   "short_name": "pawkeepr",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0f17",
-  "theme_color": "#0aa38a",
+  "background_color": "#f6f8fc",
+  "theme_color": "#f38b14",
   "icons": [
     {"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"},
     {"src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png"},
