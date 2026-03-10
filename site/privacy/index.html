@@ -1,27 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8L4F17RBHD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-
-    gtag("config", "G-8L4F17RBHD");
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-8L4F17RBHD');
   </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f38b14" />
+  <meta name="theme-color" content="#ff9800" />
   <title>Privacy | pawkeepr</title>
-  <meta name="description" content="Privacy policy summary for pawkeepr." />
+  <meta name="description" content="Privacy information for pawkeepr users." />
   <link rel="canonical" href="https://pawkeepr.cc/privacy/" />
-  <meta property="og:title" content="Privacy | pawkeepr" />
-  <meta property="og:description" content="Privacy policy summary for pawkeepr." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pawkeepr.cc/privacy/" />
-  <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
-
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -33,56 +25,48 @@
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="/" aria-label="pawkeepr home">
-        <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
+        <img class="brand-mark" src="/assets/app_icon.png" alt="pawkeepr app icon" />
         <span>pawkeepr</span>
       </a>
       <nav class="navlinks" aria-label="Site">
+        <a href="/">Home</a>
         <a href="/about/">About</a>
+        <a href="/privacy/" aria-current="page">Privacy</a>
         <a href="/terms/">Terms</a>
-        <a id="nav-testflight" class="nav-beta" href="#" aria-label="Public beta (TestFlight)">
-          <span class="beta-badge" aria-hidden="true">TF</span>
-          <span>Public beta</span>
-        </a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section section-first">
-      <div class="card card-pad">
-        <h1 style="margin: 0;">Privacy</h1>
-        <p class="lede muted" style="margin-top: 10px;">
-          pawkeepr is private by default. We collect only what is needed to operate the app and support your account.
-        </p>
-
-        <h2 style="margin-top: 16px;">What we collect</h2>
-        <p style="margin-top: 8px;">
-          Account details, pet records, reminders, attachments you upload, and reliability diagnostics.
-        </p>
-
-        <h2 style="margin-top: 16px;">How we use data</h2>
-        <p style="margin-top: 8px;">
-          To provide app functionality, sync records, send notifications you enable, and keep the service stable and secure.
-        </p>
-
-        <h2 style="margin-top: 16px;">Your controls</h2>
-        <p style="margin-top: 8px;">
-          You can export your data and request account deletion from inside the app.
-        </p>
-
-        <p style="margin-top: 12px;">
-          Read full policy in <a href="/terms/#privacy">Terms &amp; Privacy</a>.
-        </p>
-      </div>
+  <main class="container legal-page">
+    <section class="card legal-card">
+      <h1>Privacy</h1>
+      <p>pawkeepr is private by default. We collect only the information required to run the app and support your account.</p>
+      <h2>Data we process</h2>
+      <ul>
+        <li>Account details (for sign-in and account management)</li>
+        <li>Pet records, reminders, and care entries you create</li>
+        <li>Attachments and documents you upload</li>
+        <li>Operational diagnostics and analytics for reliability</li>
+      </ul>
+      <h2>How data is used</h2>
+      <ul>
+        <li>Deliver app features and sync your records</li>
+        <li>Send notifications you have enabled</li>
+        <li>Improve performance and stability</li>
+      </ul>
+      <h2>Your controls</h2>
+      <ul>
+        <li>AI features can be turned on or off in-app</li>
+        <li>You can export your data</li>
+        <li>You can request account deletion</li>
+      </ul>
+      <p>For full legal terms and privacy language, see the Terms page and in-app legal screens.</p>
     </section>
 
     <footer class="footer" aria-label="Footer">
-      <div>
-        <a href="/about/">About</a> ·
-        <a href="/terms/">Terms</a> ·
-        <a href="/support/">Support</a>
-      </div>
-      <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
+      <p><a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
+      <p class="muted"><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+      <p>© <span id="year"></span> pawkeepr</p>
     </footer>
   </main>
 </body>

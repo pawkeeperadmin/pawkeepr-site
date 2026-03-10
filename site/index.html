@@ -1,34 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8L4F17RBHD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-
-    gtag("config", "G-8L4F17RBHD");
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-8L4F17RBHD');
   </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ff9800" />
 
-  <title>pawkeepr — Pet Care &amp; Health Tracker with Timeline, Reminders &amp; AI Insights</title>
-  <meta name="description" content="Track vet visits, meds, diet, symptoms and reminders in one calm timeline. Optional AI summaries you review before saving. Join the iOS TestFlight beta." />
+  <title>pawkeepr | Pet care, organized</title>
+  <meta name="description" content="Never miss care moments. Track timeline, reminders, caregivers, uploads, and AI summaries in one calm app." />
   <link rel="canonical" href="https://pawkeepr.cc/" />
 
-  <meta property="og:title" content="pawkeepr — Pet Care &amp; Health Tracker with Timeline, Reminders &amp; AI Insights" />
-  <meta property="og:description" content="Track vet visits, meds, diet, symptoms and reminders in one calm timeline. Optional AI summaries you review before saving. Join the iOS TestFlight beta." />
+  <meta property="og:title" content="pawkeepr | Pet care, organized" />
+  <meta property="og:description" content="Never miss care moments. Track timeline, reminders, caregivers, uploads, and AI summaries in one calm app." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pawkeepr.cc/" />
   <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="pawkeepr — Pet Care &amp; Health Tracker with Timeline, Reminders &amp; AI Insights" />
-  <meta name="twitter:description" content="Track vet visits, meds, diet, symptoms and reminders in one calm timeline. Optional AI summaries you review before saving. Join the iOS TestFlight beta." />
+  <meta name="twitter:title" content="pawkeepr | Pet care, organized" />
+  <meta name="twitter:description" content="Never miss care moments. Track timeline, reminders, caregivers, uploads, and AI summaries in one calm app." />
   <meta name="twitter:image" content="https://pawkeepr.cc/assets/og.png" />
-
-  <meta name="theme-color" content="#f38b14" />
 
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
@@ -38,277 +35,133 @@
   <link rel="stylesheet" href="/assets/style.css" />
   <script defer src="/assets/config.js"></script>
   <script defer src="/assets/site.js"></script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "pawkeepr",
-      "url": "https://pawkeepr.cc",
-      "logo": "https://pawkeepr.cc/assets/icons/apple-touch-icon.png",
-      "sameAs": [],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer support",
-        "email": "support@pawkeepr.cc"
-      }
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "pawkeepr",
-      "url": "https://pawkeepr.cc",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://pawkeepr.cc/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-  </script>
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="/" aria-label="pawkeepr home">
-        <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
+        <img class="brand-mark" src="/assets/app_icon.png" alt="pawkeepr app icon" />
         <span>pawkeepr</span>
       </a>
       <nav class="navlinks" aria-label="Site">
         <a href="/" aria-current="page">Home</a>
         <a href="/about/">About</a>
+        <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
-        <a id="nav-testflight" class="nav-beta" href="#" aria-label="TF Public beta">
-          <span class="beta-badge" aria-hidden="true">TF</span>
-          <span>Public beta</span>
-        </a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="masthead" aria-label="Hero">
-      <h1>Your pet’s life, beautifully organized.</h1>
-      <p class="lede">Vet visits, meds, diet, symptoms, reminders, caregivers — all in one timeline. Optional AI summaries you review before saving.</p>
-      <div class="cta-row hero-cta">
-        <a id="cta-ios" data-testflight-link class="btn btn-primary" href="#">Get Early Access</a>
-        <a class="btn btn-outline" href="#screens">See how it works</a>
+  <main>
+    <section class="announcement">
+      <div class="container">
+        <p><strong>Public beta is now closed.</strong> pawkeepr is moving to App Store release.</p>
       </div>
     </section>
 
-    <section id="screens" class="section" aria-label="Screenshots">
-      <h2>Screens at a glance</h2>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Built for calmer pet care</p>
+        <h1>Never miss a care moment.</h1>
+        <p class="lede">
+          Keep timeline records, reminders, caregivers, and key documents in one place.
+          Optional AI helps summarize history and extract details when you need it.
+        </p>
+        <div class="cta-row">
+          <a data-appstore-link class="btn btn-primary" href="#">Download on the App Store</a>
+          <a class="btn btn-outline" href="#screens">View screenshots</a>
+        </div>
+        <p class="fineprint">App Store link will go live at launch.</p>
+      </div>
+      <div class="hero-visual card">
+        <img src="/assets/screenshots/prod/overview.png" alt="pawkeepr dashboard overview" />
+      </div>
+    </section>
+
+    <section class="container section outcomes" aria-label="Outcomes">
+      <h2>Why pet owners choose pawkeepr</h2>
+      <div class="outcome-grid">
+        <article class="card outcome-card">
+          <h3>Stay ahead of care</h3>
+          <p>Set reminders once and keep routines on track.</p>
+        </article>
+        <article class="card outcome-card">
+          <h3>Keep records together</h3>
+          <p>Visits, meds, notes, and docs in a single timeline.</p>
+        </article>
+        <article class="card outcome-card">
+          <h3>Coordinate caregivers</h3>
+          <p>Share responsibilities with family and trusted carers.</p>
+        </article>
+        <article class="card outcome-card">
+          <h3>See what is changing</h3>
+          <p>Use trends and summaries to spot patterns earlier.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="screens" class="container section screens" aria-label="App screenshots">
+      <div class="section-head">
+        <h2>See pawkeepr in action</h2>
+        <a data-appstore-link class="btn btn-primary" href="#">Download</a>
+      </div>
       <div class="screens-grid">
-        <figure class="card card-pad screen-card">
-          <picture>
-            <source
-              srcset="/assets/screenshots/timeline-420.webp 420w, /assets/screenshots/timeline-840.webp 840w, /assets/screenshots/timeline-1260.webp 1260w"
-              sizes="(max-width: 900px) 88vw, 360px"
-              type="image/webp"
-            />
-            <img
-              src="/assets/screenshots/timeline-840.jpg"
-              srcset="/assets/screenshots/timeline-420.jpg 420w, /assets/screenshots/timeline-840.jpg 840w, /assets/screenshots/timeline-1260.jpg 1260w"
-              sizes="(max-width: 900px) 88vw, 360px"
-              width="420"
-              height="858"
-              alt="Timeline screen"
-            />
-          </picture>
-          <figcaption>Timeline — your single source of truth.</figcaption>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/overview.png" alt="Overview screen" loading="lazy" />
+          <figcaption>Everything in one clear view</figcaption>
         </figure>
-        <figure class="card card-pad screen-card">
-          <picture>
-            <source
-              srcset="/assets/screenshots/ai_summary-420.webp 420w, /assets/screenshots/ai_summary-840.webp 840w, /assets/screenshots/ai_summary-1260.webp 1260w"
-              sizes="(max-width: 900px) 88vw, 360px"
-              type="image/webp"
-            />
-            <img
-              src="/assets/screenshots/ai_summary-840.jpg"
-              srcset="/assets/screenshots/ai_summary-420.jpg 420w, /assets/screenshots/ai_summary-840.jpg 840w, /assets/screenshots/ai_summary-1260.jpg 1260w"
-              sizes="(max-width: 900px) 88vw, 360px"
-              width="420"
-              height="851"
-              alt="Reminders screen"
-            />
-          </picture>
-          <figcaption>Reminders — stay ahead of meds and checkups.</figcaption>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/timeline.png" alt="Timeline screen" loading="lazy" />
+          <figcaption>Never miss a care moment</figcaption>
         </figure>
-        <figure class="card card-pad screen-card">
-          <picture>
-            <source
-              srcset="/assets/screenshots/reminders-420.webp 420w, /assets/screenshots/reminders-840.webp 840w, /assets/screenshots/reminders-1260.webp 1260w"
-              sizes="(max-width: 900px) 88vw, 360px"
-              type="image/webp"
-            />
-            <img
-              src="/assets/screenshots/reminders-840.jpg"
-              srcset="/assets/screenshots/reminders-420.jpg 420w, /assets/screenshots/reminders-840.jpg 840w, /assets/screenshots/reminders-1260.jpg 1260w"
-              sizes="(max-width: 900px) 88vw, 360px"
-              width="420"
-              height="856"
-              alt="AI summary screen"
-            />
-          </picture>
-          <figcaption>AI summaries — you review before anything is saved.</figcaption>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/reminder.png" alt="Reminders screen" loading="lazy" />
+          <figcaption>Stay ahead of every reminder</figcaption>
+        </figure>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/pet-management.png" alt="Pet list screen" loading="lazy" />
+          <figcaption>Manage every pet together</figcaption>
+        </figure>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/caregivers.png" alt="Caregiver screen" loading="lazy" />
+          <figcaption>Coordinate trusted caregivers</figcaption>
+        </figure>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/ai-insight.png" alt="AI insights screen" loading="lazy" />
+          <figcaption>Get instant AI insights</figcaption>
+        </figure>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/document-upload.png" alt="Import document screen" loading="lazy" />
+          <figcaption>Upload once, find everything</figcaption>
+        </figure>
+        <figure class="card screen-card">
+          <img src="/assets/screenshots/prod/pet-detail.png" alt="Pet detail screen" loading="lazy" />
+          <figcaption>Full pet care profile</figcaption>
         </figure>
       </div>
-      <button type="button" class="text-link" data-open-lightbox>See all screens</button>
     </section>
 
-    <section class="section" aria-label="Who it’s for">
-      <h2>Made for real-life pet care</h2>
-      <p class="muted" style="margin-top: 8px;">If any of these sound like you, pawkeepr will feel instantly useful.</p>
-      <div class="grid-2">
-        <article class="card card-pad">
-          <h3>Multi-pet households</h3>
-          <p>Separate histories per pet, without juggling notes and photos across apps.</p>
-        </article>
-        <article class="card card-pad">
-          <h3>Ongoing conditions</h3>
-          <p>Allergies, meds, diet changes, symptoms — track patterns over time.</p>
-        </article>
-        <article class="card card-pad">
-          <h3>Shared caregiving</h3>
-          <p>Let family members help log care with clear roles and permissions.</p>
-        </article>
-        <article class="card card-pad">
-          <h3>Vet-heavy periods</h3>
-          <p>Store documents and receipts, then pull out key details when you need them.</p>
-        </article>
-      </div>
-      <div class="cta-row">
-        <a data-testflight-link class="btn btn-primary" href="#">Get Early Access</a>
-      </div>
-    </section>
-
-    <section id="features" class="section" aria-label="Features">
-      <h2>Features</h2>
-      <p class="muted" style="margin-top: 8px;">A calm system for everyday care, and the moments you’ll want to remember.</p>
-
-      <div class="grid-3" role="list" aria-label="Feature list">
-        <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 6h8M7 10h10M7 14h10M7 18h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h3>Timeline as the system of record</h3><p>Everything important in one consistent history.</p></div>
-        </div>
-        <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"/></svg></div>
-          <div><h3>Smart reminders &amp; notifications</h3><p>Stay ahead of care without mental overhead.</p></div>
-        </div>
-        <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon amber" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8.5 12.5c.8 1.6 2.5 2.5 3.5 2.5s2.7-.9 3.5-2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 10.5c.4-3 2.6-5.5 5-5.5s4.6 2.5 5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 14c0 3.3 3.6 6 8 6s8-2.7 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h3>Multi-pet support</h3><p>Keep each pet’s story separate, without switching tools.</p></div>
-        </div>
-        <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 1 0-8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 21c1.8-3.5 5-6 8-6s6.2 2.5 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h3>Caregiver coordination</h3><p>Caregivers, vets and clinics — organised and linked to events.</p></div>
-        </div>
-        <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon amber" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10v18H7V3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h3>Scan documents + optional summaries</h3><p>Optional: extract key details from vet docs, then review before saving.</p></div>
-        </div>
-        <div class="card card-pad feature" role="listitem">
-          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 12a4 4 0 1 1 8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M2.8 21c2-4 5.3-6.2 9.2-6.2S19.2 17 21.2 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 8l2-2M7 8L5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h3>Family sharing &amp; roles</h3><p>Invite household members, with permission levels.</p></div>
-        </div>
-      </div>
-      <div class="cta-row">
-        <a data-testflight-link class="btn btn-primary" href="#">Get Early Access</a>
-      </div>
-    </section>
-
-    <section class="section" aria-label="How it works">
-      <h2>How it works</h2>
-      <p class="muted" style="margin-top: 8px;">A simple flow that fits into real life.</p>
-      <div class="steps" role="list" aria-label="Steps">
-        <div class="card card-pad step" role="listitem"><div class="step-num" aria-hidden="true">1</div><div><h3>Add pets &amp; caregivers</h3><p>Set up your pets and the people who care for them.</p></div></div>
-        <div class="card card-pad step" role="listitem"><div class="step-num" aria-hidden="true">2</div><div><h3>Capture life events &amp; reminders</h3><p>Log visits, treatments, notes, and schedule what’s next.</p></div></div>
-        <div class="card card-pad step" role="listitem"><div class="step-num" aria-hidden="true">3</div><div><h3>Stay on track with insights</h3><p>Review trends and summaries when you want them.</p></div></div>
-      </div>
-      <div class="cta-row">
-        <a data-testflight-link class="btn btn-primary" href="#">Get Early Access</a>
-      </div>
-    </section>
-
-    <section class="section" aria-label="Built for trust">
-      <h2>Built for trust</h2>
-      <ul class="trust-list">
-        <li><strong>Private by default</strong> — nothing is shared unless you initiate it</li>
-        <li><strong>AI is optional</strong> — enable it only if you want summaries/OCR</li>
-        <li><strong>You review before saving</strong> — AI suggestions never auto-write your records</li>
-        <li><strong>Export anytime</strong> — keep a copy of your data when you need it</li>
-        <li><strong>Delete anytime</strong> — request deletion and we remove your account</li>
+    <section class="container section trust" aria-label="Trust">
+      <h2>Built for trust and control</h2>
+      <ul>
+        <li>Private by default</li>
+        <li>AI is optional and user-controlled</li>
+        <li>You review before saving</li>
+        <li>Export and account deletion controls in-app</li>
       </ul>
-      <p class="muted trust-links"><a href="/terms/">Terms &amp; Privacy</a> · <a href="/security/">Security</a></p>
-    </section>
-
-    <section id="join-beta" class="section" aria-label="Public beta">
-      <div class="card card-pad beta-cta">
-        <h2>Join the public beta</h2>
-        <p class="muted" style="margin-top: 8px;">If pawkeepr would make your day-to-day care feel calmer, I’d love your feedback. The beta helps shape what we build next.</p>
-        <div class="beta-details" aria-label="Beta details">
-          <p><strong>Platform:</strong> iOS via TestFlight</p>
-          <p><strong>Cost:</strong> Free during beta</p>
-          <p><strong>Feedback:</strong> <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
-        </div>
-        <div class="cta-row" role="group" aria-label="Beta call to action" style="margin-top: 16px;">
-          <a data-testflight-link class="btn btn-primary" href="#">Get Early Access</a>
-        </div>
+      <div class="cta-row">
+        <a data-appstore-link class="btn btn-primary" href="#">Download on the App Store</a>
       </div>
     </section>
 
-    <section class="section" aria-label="FAQ">
-      <div class="faq-head">
-        <h2>FAQ</h2>
-        <a data-testflight-link class="btn btn-primary faq-cta" href="#">Get Early Access</a>
-      </div>
-      <div class="faq">
-        <details><summary>Is pawkeepr free during beta?</summary><p>Yes. The iOS TestFlight beta is currently free.</p></details>
-        <details><summary>Do I need an account?</summary><p>Yes. You need an account so your pets, reminders, and documents stay securely tied to you.</p></details>
-        <details><summary>Can I track multiple pets?</summary><p>Yes. pawkeepr supports multiple pets with separate histories and reminders.</p></details>
-        <details><summary>Can I turn AI off completely?</summary><p>Yes. AI features are optional and can be disabled from settings.</p></details>
-        <details><summary>How private is my data?</summary><p>Private by default. Your data is stored securely and is only shared when you explicitly initiate an action.</p></details>
-        <details><summary>How does AI summarisation work?</summary><p>When enabled, AI can help extract and summarise documents you choose to process. You review suggestions before saving.</p></details>
-        <details><summary>Can my family help log care?</summary><p>Yes. You can invite household members and assign roles. View-only roles can browse without making changes.</p></details>
-      </div>
-    </section>
-
-    <section class="section" aria-label="Send a message">
-      <div class="card card-pad">
-        <h2>Send a message</h2>
-        <p class="muted" style="margin-top: 8px;">This form drafts an email and opens your email app to send it.</p>
-        <form id="support-form" class="form" aria-label="Contact form" style="margin-top: 16px;">
-          <div class="field"><label for="name">Name (optional)</label><input id="name" name="name" autocomplete="name" /></div>
-          <div class="field"><label for="email">Email (optional)</label><input id="email" name="email" type="email" autocomplete="email" /></div>
-          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
-          <button class="btn btn-primary" type="submit">Draft email</button>
-        </form>
-      </div>
-    </section>
-
-    <footer class="footer" aria-label="Footer">
-      <div class="footer-support">Questions or feedback? Email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></div>
-      <div class="footer-links">
-        <a href="/about/">About</a> ·
-        <a href="/terms/">Terms</a> ·
-        <a href="/security/">Security</a>
-      </div>
-      <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
+    <footer class="container footer" aria-label="Footer">
+      <p>Questions? <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
+      <p class="muted">
+        <a href="/privacy/">Privacy</a> ·
+        <a href="/terms/">Terms</a>
+      </p>
+      <p>© <span id="year"></span> pawkeepr</p>
     </footer>
   </main>
-
-  <div class="lightbox" id="screens-lightbox" aria-hidden="true" role="dialog" aria-label="All app screens">
-    <div class="lightbox-inner" role="document">
-      <button type="button" class="lightbox-close" aria-label="Close" data-close-lightbox>Close</button>
-      <div class="lightbox-grid">
-        <figure><picture><source srcset="/assets/screenshots/overview-840.webp" type="image/webp" /><img src="/assets/screenshots/overview-840.jpg" width="840" height="1686" alt="Dashboard overview screen" loading="lazy" /></picture><figcaption>Overview</figcaption></figure>
-        <figure><picture><source srcset="/assets/screenshots/timeline-840.webp" type="image/webp" /><img src="/assets/screenshots/timeline-840.jpg" width="840" height="1716" alt="Timeline screen" loading="lazy" /></picture><figcaption>Timeline</figcaption></figure>
-        <figure><picture><source srcset="/assets/screenshots/ai_summary-840.webp" type="image/webp" /><img src="/assets/screenshots/ai_summary-840.jpg" width="840" height="1703" alt="Reminders screen" loading="lazy" /></picture><figcaption>Reminders</figcaption></figure>
-        <figure><picture><source srcset="/assets/screenshots/pets-840.webp" type="image/webp" /><img src="/assets/screenshots/pets-840.jpg" width="840" height="1703" alt="Pets screen" loading="lazy" /></picture><figcaption>Pets</figcaption></figure>
-        <figure><picture><source srcset="/assets/screenshots/reminders-840.webp" type="image/webp" /><img src="/assets/screenshots/reminders-840.jpg" width="840" height="1712" alt="AI summary screen" loading="lazy" /></picture><figcaption>AI summary</figcaption></figure>
-      </div>
-    </div>
-  </div>
 </body>
 </html>

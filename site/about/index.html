@@ -1,28 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8L4F17RBHD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-
-    gtag("config", "G-8L4F17RBHD");
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-8L4F17RBHD');
   </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f38b14" />
+  <meta name="theme-color" content="#ff9800" />
   <title>About | pawkeepr</title>
-  <meta name="description" content="The story behind pawkeepr." />
+  <meta name="description" content="pawkeepr helps pet families stay organized with one timeline for care." />
   <link rel="canonical" href="https://pawkeepr.cc/about/" />
-
-  <meta property="og:title" content="About pawkeepr" />
-  <meta property="og:description" content="Built from care, for the moments that matter." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pawkeepr.cc/about/" />
-  <meta property="og:image" content="https://pawkeepr.cc/assets/og.png" />
-
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -34,111 +25,42 @@
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="/" aria-label="pawkeepr home">
-        <img class="brand-mark" src="/assets/app_icon.png" alt="" aria-hidden="true" />
+        <img class="brand-mark" src="/assets/app_icon.png" alt="pawkeepr app icon" />
         <span>pawkeepr</span>
       </a>
       <nav class="navlinks" aria-label="Site">
+        <a href="/">Home</a>
         <a href="/about/" aria-current="page">About</a>
+        <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
-        <a id="nav-testflight" class="nav-beta" href="#" aria-label="Public beta (TestFlight)">
-          <span class="beta-badge" aria-hidden="true">TF</span>
-          <span>Public beta</span>
-        </a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section section-first" aria-label="About">
-      <div class="card card-pad">
-        <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
-          <img src="/assets/app_icon.png" alt="" aria-hidden="true" style="width: 56px; height: 56px; border-radius: 16px;" />
-          <div>
-            <h1 style="margin: 0;">About pawkeepr</h1>
-            <p class="muted" style="margin-top: 6px;">Version 1.3.6 (13)</p>
-          </div>
-        </div>
-
-        <div style="margin-top: 18px; display: grid; gap: 14px;">
-          <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
-            <img
-              src="/assets/rumi-512.jpg"
-              srcset="/assets/rumi-256.jpg 256w, /assets/rumi-512.jpg 512w, /assets/rumi-768.jpg 768w"
-              sizes="112px"
-              alt="Rumi"
-              style="width: 112px; height: 112px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(16, 32, 29, 0.10);"
-              loading="lazy"
-              decoding="async"
-            />
-            <div style="min-width: 220px; flex: 1;"><p class="muted" style="margin: 0;">Built from care, for calm and clarity in everyday pet care.</p></div>
-          </div>
-
-          <h2>Our Mission</h2>
-          <p>Pet care should feel steady, not scattered.</p>
-          <p>pawkeepr exists to give pet owners a calm, organised way to manage their pet’s life — from vet visits to daily care.</p>
-
-          <h2>What Makes pawkeepr Different</h2>
-          <p>Most tools either:</p>
-          <ul>
-            <li>Focus only on reminders</li>
-            <li>Store notes without structure</li>
-            <li>Over-automate with AI</li>
-            <li>Or feel clinical and complicated</li>
-          </ul>
-          <p>pawkeepr is different.</p>
-          <p>It’s timeline-first, privacy-first, and built for real day-to-day use.</p>
-
-          <h2>Built for Trust</h2>
-          <p>We designed pawkeepr around predictable behaviour:</p>
-          <ul>
-            <li>Nothing auto-saves without review</li>
-            <li>AI is optional</li>
-            <li>Your data can be exported</li>
-            <li>Your account can be deleted anytime</li>
-          </ul>
-          <p>We believe clarity builds trust.</p>
-
-          <h2>Our Approach</h2>
-          <p>We’re building pawkeepr thoughtfully — not rapidly.</p>
-          <p>We care more about reliability and clarity than adding flashy features.</p>
-          <p>If something feels confusing, we treat that as a design problem to solve.</p>
-
-          <h2>Where We Are Today</h2>
-          <p>pawkeepr is currently available via iOS TestFlight public beta.</p>
-          <p>We’re improving it continuously based on user feedback.</p>
-
-          <p>If pawkeepr sounds useful for your household, we’d love for you to try it.</p>
-        </div>
+  <main class="container legal-page">
+    <section class="card legal-card">
+      <h1>About pawkeepr</h1>
+      <p>pawkeepr is built to make pet care feel calmer, clearer, and easier to keep up with.</p>
+      <p>Instead of scattered notes, photos, and reminders, pawkeepr gives families one place to manage care events, caregivers, timelines, and documents.</p>
+      <h2>What matters most</h2>
+      <ul>
+        <li>Simple day-to-day logging</li>
+        <li>Reliable reminders and follow-through</li>
+        <li>Organized care history across pets</li>
+        <li>Optional AI features under user control</li>
+      </ul>
+      <h2>Product direction</h2>
+      <p>The website helps you discover pawkeepr. The app is where care happens.</p>
+      <div class="cta-row">
+        <a data-appstore-link class="btn btn-primary" href="#">Download on the App Store</a>
       </div>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Get Early Access</h2>
-          <p class="muted" style="margin-top: 8px;">Join the iOS public beta and help shape what we build next.</p>
-          <div class="cta-row" style="margin-top: 16px;">
-            <a id="cta-ios" class="btn btn-primary" href="#">Get Early Access</a>
-            <a class="btn btn-outline" href="mailto:support@pawkeepr.cc?subject=Feedback%20for%20pawkeepr">Email feedback</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="card card-pad">
-          <h2>Support</h2>
-          <p style="margin-top: 8px;">
-            For help or feedback, email <a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a>.
-          </p>
-        </div>
-      </div>
-
-      <footer class="footer" aria-label="Footer">
-        <div>
-          <a href="/terms/">Terms</a> ·
-          <a href="/security/">Security</a>
-        </div>
-        <div style="margin-top: 10px;">© <span id="year"></span> pawkeepr</div>
-      </footer>
     </section>
+
+    <footer class="footer" aria-label="Footer">
+      <p><a href="mailto:support@pawkeepr.cc">support@pawkeepr.cc</a></p>
+      <p class="muted"><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+      <p>© <span id="year"></span> pawkeepr</p>
+    </footer>
   </main>
 </body>
 </html>
