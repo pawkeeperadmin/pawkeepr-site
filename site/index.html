@@ -48,6 +48,10 @@
         <a href="/about/">About</a>
         <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
+        <a data-appstore-link class="nav-store" href="#" aria-label="Download on the App Store">
+          <span class="nav-store-icon" aria-hidden="true"></span>
+          <span>App Store</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -67,90 +71,63 @@
           Keep timeline records, reminders, caregivers, and key documents in one place.
           Optional AI helps summarize history and extract details when you need it.
         </p>
-        <div class="cta-row">
-          <a data-appstore-link class="btn btn-primary" href="#">Download on the App Store</a>
-          <a class="btn btn-outline" href="#screens">View screenshots</a>
-        </div>
         <p class="fineprint">App Store link will go live at launch.</p>
       </div>
-      <div class="hero-visual card">
-        <img src="/assets/screenshots/prod/overview.png" alt="pawkeepr dashboard overview" />
+      <div class="hero-screens">
+        <div class="screens-scroll" aria-label="App screenshots">
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/overview.png" alt="Overview screen" loading="lazy" />
+            <figcaption>Everything in one clear view</figcaption>
+          </figure>
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/timeline.png" alt="Timeline screen" loading="lazy" />
+            <figcaption>Never miss a care moment</figcaption>
+          </figure>
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/reminder.png" alt="Reminders screen" loading="lazy" />
+            <figcaption>Stay ahead of every reminder</figcaption>
+          </figure>
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/pet-management.png" alt="Pet list screen" loading="lazy" />
+            <figcaption>Manage every pet together</figcaption>
+          </figure>
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/caregivers.png" alt="Caregiver screen" loading="lazy" />
+            <figcaption>Coordinate trusted caregivers</figcaption>
+          </figure>
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/ai-insight.png" alt="AI insights screen" loading="lazy" />
+            <figcaption>Get instant AI insights</figcaption>
+          </figure>
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/document-upload.png" alt="Import document screen" loading="lazy" />
+            <figcaption>Upload once, find everything</figcaption>
+          </figure>
+          <figure class="card screen-card">
+            <img src="/assets/screenshots/prod/pet-detail.png" alt="Pet detail screen" loading="lazy" />
+            <figcaption>Full pet care profile</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <section class="container section outcomes" aria-label="Outcomes">
       <h2>Why pet owners choose pawkeepr</h2>
-      <div class="outcome-grid">
-        <article class="card outcome-card">
-          <h3>Stay ahead of care</h3>
-          <p>Set reminders once and keep routines on track.</p>
-        </article>
-        <article class="card outcome-card">
-          <h3>Keep records together</h3>
-          <p>Visits, meds, notes, and docs in a single timeline.</p>
-        </article>
-        <article class="card outcome-card">
-          <h3>Coordinate caregivers</h3>
-          <p>Share responsibilities with family and trusted carers.</p>
-        </article>
-        <article class="card outcome-card">
-          <h3>See what is changing</h3>
-          <p>Use trends and summaries to spot patterns earlier.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="screens" class="container section screens" aria-label="App screenshots">
-      <div class="section-head">
-        <h2>See pawkeepr in action</h2>
-        <a data-appstore-link class="btn btn-primary" href="#">Download</a>
-      </div>
-      <div class="screens-grid">
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/overview.png" alt="Overview screen" loading="lazy" />
-          <figcaption>Everything in one clear view</figcaption>
-        </figure>
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/timeline.png" alt="Timeline screen" loading="lazy" />
-          <figcaption>Never miss a care moment</figcaption>
-        </figure>
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/reminder.png" alt="Reminders screen" loading="lazy" />
-          <figcaption>Stay ahead of every reminder</figcaption>
-        </figure>
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/pet-management.png" alt="Pet list screen" loading="lazy" />
-          <figcaption>Manage every pet together</figcaption>
-        </figure>
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/caregivers.png" alt="Caregiver screen" loading="lazy" />
-          <figcaption>Coordinate trusted caregivers</figcaption>
-        </figure>
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/ai-insight.png" alt="AI insights screen" loading="lazy" />
-          <figcaption>Get instant AI insights</figcaption>
-        </figure>
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/document-upload.png" alt="Import document screen" loading="lazy" />
-          <figcaption>Upload once, find everything</figcaption>
-        </figure>
-        <figure class="card screen-card">
-          <img src="/assets/screenshots/prod/pet-detail.png" alt="Pet detail screen" loading="lazy" />
-          <figcaption>Full pet care profile</figcaption>
-        </figure>
-      </div>
+      <ul class="outcome-list">
+        <li>Stay ahead of care with reminders that keep routines on track.</li>
+        <li>Keep visits, meds, notes, and documents together in one timeline.</li>
+        <li>Coordinate family and trusted caregivers with less friction.</li>
+        <li>Use trends and insights to spot what is changing earlier.</li>
+      </ul>
     </section>
 
     <section class="container section trust" aria-label="Trust">
       <h2>Built for trust and control</h2>
-      <ul>
-        <li>Private by default</li>
-        <li>AI is optional and user-controlled</li>
-        <li>You review before saving</li>
-        <li>Export and account deletion controls in-app</li>
-      </ul>
-      <div class="cta-row">
-        <a data-appstore-link class="btn btn-primary" href="#">Download on the App Store</a>
+      <div class="trust-chips">
+        <span class="trust-chip">Private by default</span>
+        <span class="trust-chip">AI is optional and user-controlled</span>
+        <span class="trust-chip">You review before saving</span>
+        <span class="trust-chip">Export and account deletion controls in-app</span>
       </div>
     </section>
 
