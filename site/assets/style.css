@@ -101,14 +101,15 @@ body {
 .nav-store {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: color-mix(in srgb, var(--surface-soft) 74%, transparent);
-  border: 1px solid var(--line);
+  padding: 4px;
+  background: transparent;
+  border: 0;
 }
 
-.nav-store-icon {
-  font-size: 18px;
-  line-height: 1;
+.app-store-badge {
+  display: block;
+  height: 40px;
+  width: auto;
 }
 
 .announcement {
