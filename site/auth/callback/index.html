@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><title>Return to pawkeepr</title><link rel="stylesheet" href="/assets/style.css"></head>
+<body><main class="container legal-page"><section class="card legal-card"><h1>Return to pawkeepr</h1><p>Complete sign-in or account recovery in the app on the device where you started.</p><p><a id="return-to-app" href="com.pawkeepr.mobile://auth-callback">Open pawkeepr</a></p><p>If the app does not open, make sure it is installed, then try the original email link on that device. Do not share this sign-in link.</p><p><a href="/support/">Support</a></p></section></main><script>
+const callback = 'com.pawkeepr.mobile://auth-callback' + location.search + location.hash;
+history.replaceState(null, '', location.pathname);
+document.getElementById('return-to-app').href = callback;
+</script></body></html>
